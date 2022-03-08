@@ -1,0 +1,298 @@
+{
+    "name": "Midi",
+    "maps": [
+        {
+            "name": "MidiInputs",
+            "id": "4d7b9d0c-6f6a-4232-9d31-ab75b626573e",
+            "actions": [
+                {
+                    "name": "KeyTones",
+                    "type": "Value",
+                    "id": "d4d3313e-de70-4d73-b880-50dafe4b34c0",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "357b8cf8-4782-44ae-9cd1-d58782816cf1",
+                    "path": "<MidiDevice>/note048",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "KeyTones",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "a9f027d0-c9ac-4b5b-9775-cfb236864ca1",
+                    "path": "<MidiDevice>/note049",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "KeyTones",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "fc75b0ed-f2f1-4fcb-b8d3-acc4c89f11ee",
+                    "path": "<MidiDevice>/note050",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "KeyTones",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "edf45168-d8b4-4a73-b2ee-f715141458ec",
+                    "path": "<MidiDevice>/note051",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "KeyTones",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "3595db95-436b-40b5-a1f1-4cd95e6a00ee",
+                    "path": "<MidiDevice>/note052",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "KeyTones",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "0766bb6b-26bb-414d-b6cb-d79d7f7afc34",
+                    "path": "<MidiDevice>/note053",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "KeyTones",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "2d4309fd-802f-40de-a2ad-b236558918ed",
+                    "path": "<MidiDevice>/note054",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "KeyTones",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "e87293c8-bc0a-440d-98ed-189327d117cc",
+                    "path": "<MidiDevice>/note055",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "KeyTones",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "8134749d-c268-4ce7-82d9-41bf98438d85",
+                    "path": "<MidiDevice>/note056",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "KeyTones",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "8536da67-2daf-42bd-bd9e-67c04b1eaf43",
+                    "path": "<MidiDevice>/note057",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "KeyTones",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "15ddcf31-868a-4e03-814c-a5fc915fcb52",
+                    "path": "<MidiDevice>/note058",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "KeyTones",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "64a6c8a5-6ead-40ec-9295-fdd1e12cbd3d",
+                    "path": "<MidiDevice>/note059",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "KeyTones",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "88ed367d-9edc-45b1-9ebf-7d7b8416a193",
+                    "path": "<MidiDevice>/note060",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "KeyTones",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "52529b78-6262-4b7d-9db5-a5a718e235a1",
+                    "path": "<MidiDevice>/note061",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "KeyTones",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "377f2153-8ac1-4952-8de0-53f0f3f4cc41",
+                    "path": "<MidiDevice>/note062",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "KeyTones",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "dd2497cc-68b3-4447-b9d7-619414e84c1b",
+                    "path": "<MidiDevice>/note063",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "KeyTones",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "e67fefe2-02fa-4c11-b021-ac4f1092d771",
+                    "path": "<MidiDevice>/note064",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "KeyTones",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "349f697c-5427-4a97-be8b-d1be92ab4ada",
+                    "path": "<MidiDevice>/note065",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "KeyTones",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "aa291ccb-215b-4a31-baa3-07d7ccab285a",
+                    "path": "<MidiDevice>/note066",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "KeyTones",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "bccedbe2-09e1-4e7e-934b-150dbf59aaa7",
+                    "path": "<MidiDevice>/note067",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "KeyTones",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "a9b150d3-2ffe-4961-ae3d-e633a708b690",
+                    "path": "<MidiDevice>/note068",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "KeyTones",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "4fcd77cd-ee4b-48c7-9e97-c979985c7a88",
+                    "path": "<MidiDevice>/note069",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "KeyTones",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "a40dc22d-400b-44fe-a3f3-a37a86e79b5d",
+                    "path": "<MidiDevice>/note070",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "KeyTones",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "c6810c1e-402f-451f-b27a-92f80a14688e",
+                    "path": "<MidiDevice>/note071",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "KeyTones",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "ddf35843-7bac-4417-a1f6-c02ee07f6ec0",
+                    "path": "<MidiDevice>/note072",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "KeyTones",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}
