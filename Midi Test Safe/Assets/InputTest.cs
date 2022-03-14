@@ -5,6 +5,20 @@ using UnityEngine.InputSystem;
 
 public class InputTest : MonoBehaviour
 {
+    public AudioSource piano;
+    public AudioClip Cnote;
+    public AudioClip CSnote;
+    public AudioClip Dnote;
+    public AudioClip DSnote;
+    public AudioClip Enote;
+    public AudioClip Fnote;
+    public AudioClip FSnote;
+    public AudioClip Gnote;
+    public AudioClip GSnote;
+    public AudioClip Anote;
+    public AudioClip ASnote;
+    public AudioClip Bnote;
+
 
     public Midi pianoController;
 
@@ -24,6 +38,7 @@ public class InputTest : MonoBehaviour
         if (context.performed)
         {
             Debug.Log("C note has been hit");
+            piano.PlayOneShot(Cnote);
         }
     }
 
@@ -32,6 +47,7 @@ public class InputTest : MonoBehaviour
         if (context.performed)
         {
             Debug.Log("C# note has been hit");
+            piano.PlayOneShot(CSnote);
         }
     }
 
@@ -40,6 +56,7 @@ public class InputTest : MonoBehaviour
         if (context.performed)
         {
             Debug.Log("D note has been hit");
+            piano.PlayOneShot(Dnote);
         }
     }
 
@@ -48,6 +65,7 @@ public class InputTest : MonoBehaviour
         if (context.performed)
         {
             Debug.Log("D# note has been hit");
+            piano.PlayOneShot(DSnote);
         }
     }
 
@@ -56,6 +74,7 @@ public class InputTest : MonoBehaviour
         if (context.performed)
         {
             Debug.Log("E note has been hit");
+            piano.PlayOneShot(Enote);
         }
     }
 
@@ -64,6 +83,7 @@ public class InputTest : MonoBehaviour
         if (context.performed)
         {
             Debug.Log("F note has been hit");
+            piano.PlayOneShot(Fnote);
         }
     }
 
@@ -72,6 +92,7 @@ public class InputTest : MonoBehaviour
         if (context.performed)
         {
             Debug.Log("F# note has been hit");
+            piano.PlayOneShot(FSnote);
         }
     }
 
@@ -80,6 +101,7 @@ public class InputTest : MonoBehaviour
         if (context.performed)
         {
             Debug.Log("G note has been hit");
+            piano.PlayOneShot(Gnote);
         }
     }
 
@@ -88,6 +110,7 @@ public class InputTest : MonoBehaviour
         if (context.performed)
         {
             Debug.Log("G# note has been hit");
+            piano.PlayOneShot(GSnote);
         }
     }
 
@@ -96,6 +119,7 @@ public class InputTest : MonoBehaviour
         if (context.performed)
         {
             Debug.Log("A note has been hit");
+            piano.PlayOneShot(Anote);
         }
     }
 
@@ -104,6 +128,7 @@ public class InputTest : MonoBehaviour
         if (context.performed)
         {
             Debug.Log("A# note has been hit");
+            piano.PlayOneShot(ASnote);
         }
     }
 
@@ -112,6 +137,7 @@ public class InputTest : MonoBehaviour
         if (context.performed)
         {
             Debug.Log("B note has been hit");
+            piano.PlayOneShot(Bnote);
         }
     }
 
