@@ -24,7 +24,7 @@ public class InputTest : MonoBehaviour
     {
         if (context.performed)
         {
-            pressButton.checkCorrect("C");
+            StartCoroutine(pressButton.checkCorrect("C"));
             Debug.Log("C note has been hit");
         }
     }
@@ -33,7 +33,7 @@ public class InputTest : MonoBehaviour
     {
         if (context.performed)
         {
-            pressButton.checkCorrect("C#");
+            StartCoroutine(pressButton.checkCorrect("C#"));
             Debug.Log("C# note has been hit");
         }
     }
@@ -42,7 +42,7 @@ public class InputTest : MonoBehaviour
     {
         if (context.performed)
         {
-            pressButton.checkCorrect("D");
+            StartCoroutine(pressButton.checkCorrect("D"));
             Debug.Log("D note has been hit");
         }
     }
@@ -51,7 +51,7 @@ public class InputTest : MonoBehaviour
     {
         if (context.performed)
         {
-            pressButton.checkCorrect("D#");
+            StartCoroutine(pressButton.checkCorrect("D#"));
             Debug.Log("D# note has been hit");
         }
     }
@@ -60,7 +60,7 @@ public class InputTest : MonoBehaviour
     {
         if (context.performed)
         {
-            pressButton.checkCorrect("E");
+            StartCoroutine(pressButton.checkCorrect("E"));
             Debug.Log("E note has been hit");
         }
     }
@@ -69,7 +69,7 @@ public class InputTest : MonoBehaviour
     {
         if (context.performed)
         {
-            pressButton.checkCorrect("F");
+            StartCoroutine(pressButton.checkCorrect("F"));
             Debug.Log("F note has been hit");
         }
     }
@@ -78,7 +78,7 @@ public class InputTest : MonoBehaviour
     {
         if (context.performed)
         {
-            pressButton.checkCorrect("F#");
+            StartCoroutine(pressButton.checkCorrect("F#"));
             Debug.Log("F# note has been hit");
         }
     }
@@ -87,7 +87,7 @@ public class InputTest : MonoBehaviour
     {
         if (context.performed)
         {
-            pressButton.checkCorrect("G");
+            StartCoroutine(pressButton.checkCorrect("G"));
             Debug.Log("G note has been hit");
         }
     }
@@ -96,7 +96,7 @@ public class InputTest : MonoBehaviour
     {
         if (context.performed)
         {
-            pressButton.checkCorrect("G#");
+            StartCoroutine(pressButton.checkCorrect("G#"));
             Debug.Log("G# note has been hit");
         }
     }
@@ -105,7 +105,7 @@ public class InputTest : MonoBehaviour
     {
         if (context.performed)
         {
-            pressButton.checkCorrect("A");
+            StartCoroutine(pressButton.checkCorrect("A"));
             Debug.Log("A note has been hit");
         }
     }
@@ -114,7 +114,7 @@ public class InputTest : MonoBehaviour
     {
         if (context.performed)
         {
-            pressButton.checkCorrect("A#");
+            StartCoroutine(pressButton.checkCorrect("A#"));
             Debug.Log("A# note has been hit");
         }
     }
@@ -123,7 +123,7 @@ public class InputTest : MonoBehaviour
     {
         if (context.performed)
         {
-            pressButton.checkCorrect("B");
+            StartCoroutine(pressButton.checkCorrect("B"));
             Debug.Log("B note has been hit");
         }
     }

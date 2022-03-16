@@ -9,7 +9,7 @@ public class ButtonTest : MonoBehaviour
 
     public Renderer render;
 
-    string[] test = { "A", "A#", "B", "C", "C#", "D", "D#", "E", "F", "F#", "G", "G#" };
+    string[] test = { "C", "C#", "D", "D#", "E", "F", "F#", "G", "G#", "A", "A#", "B" };
 
     void Start()
     {
@@ -35,7 +35,7 @@ public class ButtonTest : MonoBehaviour
         }
     }
 
-    public void checkCorrect(string keyInput)
+    public IEnumerator checkCorrect(string keyInput)
     {
         if (keyInput == chosenKey)
         {
@@ -43,14 +43,16 @@ public class ButtonTest : MonoBehaviour
             //Code voor goede code
             render.enabled = false;
             prompActive = false;
+            yield return new WaitForSeconds(2);
             chooseRandomKey();
         }
-        if (keyInput != chosenKey)
+        else if (keyInput != chosenKey)
         {
             Debug.Log("Incorrect");
             //Code voor verkeerde toets
             render.enabled = false;
             prompActive = false;
+            yield return new WaitForSeconds(2);
             chooseRandomKey();
         }
         else
@@ -59,6 +61,7 @@ public class ButtonTest : MonoBehaviour
             //Foutcode?
             render.enabled = false;
             prompActive = false;
+            yield return new WaitForSeconds(2);
             chooseRandomKey();
         }
     }
