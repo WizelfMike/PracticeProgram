@@ -5,11 +5,12 @@ using UnityEngine.InputSystem;
 
 public class InputTest : MonoBehaviour
 {
-
+    private ButtonTest pressButton;
     public Midi pianoController;
 
     private void Awake()
     {
+        pressButton = GetComponent<ButtonTest>();
         pianoController = new Midi();
         pianoController.Enable();
     }
@@ -23,6 +24,7 @@ public class InputTest : MonoBehaviour
     {
         if (context.performed)
         {
+            pressButton.checkCorrect("C");
             Debug.Log("C note has been hit");
         }
     }
@@ -31,6 +33,7 @@ public class InputTest : MonoBehaviour
     {
         if (context.performed)
         {
+            pressButton.checkCorrect("C#");
             Debug.Log("C# note has been hit");
         }
     }
@@ -39,6 +42,7 @@ public class InputTest : MonoBehaviour
     {
         if (context.performed)
         {
+            pressButton.checkCorrect("D");
             Debug.Log("D note has been hit");
         }
     }
@@ -47,6 +51,7 @@ public class InputTest : MonoBehaviour
     {
         if (context.performed)
         {
+            pressButton.checkCorrect("D#");
             Debug.Log("D# note has been hit");
         }
     }
@@ -55,6 +60,7 @@ public class InputTest : MonoBehaviour
     {
         if (context.performed)
         {
+            pressButton.checkCorrect("E");
             Debug.Log("E note has been hit");
         }
     }
@@ -63,6 +69,7 @@ public class InputTest : MonoBehaviour
     {
         if (context.performed)
         {
+            pressButton.checkCorrect("F");
             Debug.Log("F note has been hit");
         }
     }
@@ -71,6 +78,7 @@ public class InputTest : MonoBehaviour
     {
         if (context.performed)
         {
+            pressButton.checkCorrect("F#");
             Debug.Log("F# note has been hit");
         }
     }
@@ -79,6 +87,7 @@ public class InputTest : MonoBehaviour
     {
         if (context.performed)
         {
+            pressButton.checkCorrect("G");
             Debug.Log("G note has been hit");
         }
     }
@@ -87,6 +96,7 @@ public class InputTest : MonoBehaviour
     {
         if (context.performed)
         {
+            pressButton.checkCorrect("G#");
             Debug.Log("G# note has been hit");
         }
     }
@@ -95,6 +105,7 @@ public class InputTest : MonoBehaviour
     {
         if (context.performed)
         {
+            pressButton.checkCorrect("A");
             Debug.Log("A note has been hit");
         }
     }
@@ -103,6 +114,7 @@ public class InputTest : MonoBehaviour
     {
         if (context.performed)
         {
+            pressButton.checkCorrect("A#");
             Debug.Log("A# note has been hit");
         }
     }
@@ -111,6 +123,7 @@ public class InputTest : MonoBehaviour
     {
         if (context.performed)
         {
+            pressButton.checkCorrect("B");
             Debug.Log("B note has been hit");
         }
     }

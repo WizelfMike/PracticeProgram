@@ -4,66 +4,62 @@ using UnityEngine;
 
 public class ButtonTest : MonoBehaviour
 {
-    bool prompActive = false;
+    bool prompActive;
+    string chosenKey;
 
-    string[] test = { "a", "b" };
+    public Renderer render;
 
-    string[] randomButton = { "a", "aSharp", "b", "c", "cSharp", "d", "dSharp", "e", "f", "fSharp", "g", "gSharp" };
+    string[] test = { "A", "A#", "B", "C", "C#", "D", "D#", "E", "F", "F#", "G", "G#" };
 
     void Start()
     {
-        this.gameObject.SetActive(false);
-        //startTest();
-        testFunc();
+        prompActive = false;
+        chooseRandomKey();
+        render = GetComponent<Renderer>();
+        //render.enabled = false;
     }
 
-    void testFunc()
+    private void Update()
     {
-        this.gameObject.SetActive(true);
 
-        int keyPicked = Random.Range(0, test.Length);
-        Debug.Log(test[keyPicked]);
-        switch (test[keyPicked])
-        {
-            case "a":
-                if (Input.GetKeyDown("a"))
-                {
-                    this.gameObject.SetActive(false);
-                }
-                else
-                {
-                    Debug.Log("Wrong Key pressed");
-                }
-                break;
-            case "b":
-                if (Input.GetKeyDown("b"))
-                {
-                    this.gameObject.SetActive(false);
-                }
-                else
-                {
-                    Debug.Log("Wrong Key pressed");
-                }
-                break;
-        }
     }
 
-    void startTest()
+    private void chooseRandomKey()
     {
         if (prompActive == false)
         {
             prompActive = true;
-            int keyPicked = Random.Range(0, randomButton.Length);
-            switch (randomButton[keyPicked])
-            {
-                case "a":
-                    break;
-            }
+            //render.enabled = true;
+            chosenKey = test[Random.Range(0, test.Length)];
+            Debug.Log(chosenKey);
+        }
+    }
+
+    public void checkCorrect(string keyInput)
+    {
+        if (keyInput == chosenKey)
+        {
+            Debug.Log("Correct");
+            //Code voor goede code
+            render.enabled = false;
+            prompActive = false;
+            chooseRandomKey();
+        }
+        if (keyInput != chosenKey)
+        {
+            Debug.Log("Incorrect");
+            //Code voor verkeerde toets
+            render.enabled = false;
+            prompActive = false;
+            chooseRandomKey();
         }
         else
         {
+            Debug.Log("Fout?");
+            //Foutcode?
+            render.enabled = false;
             prompActive = false;
-            startTest();
+            chooseRandomKey();
         }
     }
 }
