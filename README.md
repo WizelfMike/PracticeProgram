@@ -17,7 +17,3 @@
 
 ### The hardest part of all of this will most likely be application. Building it all up will most likely not cause to many problems, but eventually testing it, making built versions, etc, will definitly bring some problems. I'll be happy to solve them though. 
 
-## **Collaborators**
-
-### @WizelfMike
-### @MartijnRene
