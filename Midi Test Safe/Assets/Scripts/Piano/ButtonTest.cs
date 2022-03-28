@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
-
+using UnityEngine.SceneManagement;
 public class ButtonTest : MonoBehaviour
 {
     bool prompActive;
@@ -16,6 +16,8 @@ public class ButtonTest : MonoBehaviour
     public TextMeshProUGUI keyText;
     public TextMeshProUGUI pointText;
     public TextMeshProUGUI lifeText;
+
+    public string winScene;
 
     string[] test = { "C", "C#", "D", "D#", "E", "F", "F#", "G", "G#", "A", "A#", "B" };
 
@@ -73,7 +75,7 @@ public class ButtonTest : MonoBehaviour
                 yield return new WaitForSeconds(2);
                 if(pointCounter >= 10)
                 {
-
+                    SceneManager.LoadScene(winScene);
                 }
                 else
                 {
