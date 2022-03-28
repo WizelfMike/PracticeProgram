@@ -1154,7 +1154,7 @@ GameObject:
   - component: {fileID: 582867949}
   - component: {fileID: 582867948}
   m_Layer: 5
-  m_Name: LiveCounter
+  m_Name: LifeCounter
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1825,7 +1825,7 @@ MonoBehaviour:
   render: {fileID: 0}
   keyText: {fileID: 1306024654}
   pointText: {fileID: 248636384}
-  lifeText: {fileID: 0}
+  lifeText: {fileID: 582867948}
 --- !u!114 &993653875
 MonoBehaviour:
   m_ObjectHideFlags: 0

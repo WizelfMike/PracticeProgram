@@ -7,6 +7,7 @@ using TMPro;
 public class ButtonTest : MonoBehaviour
 {
     bool prompActive;
+    bool keyPressed;
     string chosenKey;
     int pointCounter;
     int lifeCounter;
@@ -22,6 +23,7 @@ public class ButtonTest : MonoBehaviour
     {
         pointCounter = 0;
         lifeCounter = 3;
+        keyPressed = false;
         prompActive = false;
         chooseRandomKey();
         render = GetComponent<Renderer>();
@@ -45,49 +47,70 @@ public class ButtonTest : MonoBehaviour
         }
     }
 
+    public IEnumerator RestartGame()
+    {
+        keyText.SetText("Restarting...");
+        yield return new WaitForSeconds(1);
+        pointCounter = 0;
+        lifeCounter = 3;
+        pointText.SetText("Points: " + pointCounter);
+        lifeText.SetText("Lives: " + lifeCounter);
+        chooseRandomKey();
+    }
+
     public IEnumerator checkCorrect(string keyInput)
     {
-        if (keyInput == chosenKey)
+        if (keyPressed == false)
         {
-            //Code voor goede code
-            prompActive = false;
-            pointCounter += 1;
-            keyText.SetText("Correct!");
-            pointText.SetText("Points: " + pointCounter);
-            yield return new WaitForSeconds(2);
-            chooseRandomKey();
-        }
-        else if (keyInput != chosenKey)
-        {
-            //Code voor verkeerde toets
-            keyText.SetText("Incorrect!");
-            prompActive = false;
-            yield return new WaitForSeconds(2);
-            if(lifeCounter != 0)
+            keyPressed = true;
+            if (keyInput == chosenKey)
             {
-                lifeCounter -= 1;
-                lifeText.SetText("Points: " + lifeCounter);
-                chooseRandomKey();
+                //Code voor goede code
+                prompActive = false;
+                pointCounter += 1;
+                keyText.SetText("Correct!");
+                pointText.SetText("Points: " + pointCounter);
+                yield return new WaitForSeconds(2);
+                if(pointCounter >= 10)
+                {
+
+                }
+                else
+                {
+                    chooseRandomKey();                
+                }
+            }
+            else if (keyInput != chosenKey)
+            {
+                //Code voor verkeerde toets
+                keyText.SetText("Incorrect!");
+                prompActive = false;
+                yield return new WaitForSeconds(2);
+                if(lifeCounter > 1)
+                {
+                    lifeCounter -= 1;
+                    lifeText.SetText("Lives: " + lifeCounter);
+                    chooseRandomKey();
+                }
+                else
+                {
+                    lifeCounter -= 1;
+                    lifeText.SetText("Lives: " + lifeCounter);
+                    keyText.SetText("Out of lives!");
+                    yield return new WaitForSeconds(3);
+                    StartCoroutine(RestartGame());
+                }
+            
             }
             else
             {
-                pointCounter = 0;
-                lifeCounter = 3;
-                keyText.SetText("Out of lives!");
-                yield return new WaitForSeconds(3);
-                pointText.SetText("Points: " + pointCounter);
-                lifeText.SetText("Lives: " + lifeCounter);
+                Debug.Log("Fout?");
+                //Foutcode?
+                prompActive = false;
+                yield return new WaitForSeconds(2);
                 chooseRandomKey();
             }
-            
-        }
-        else
-        {
-            Debug.Log("Fout?");
-            //Foutcode?
-            prompActive = false;
-            yield return new WaitForSeconds(2);
-            chooseRandomKey();
+            keyPressed = false;
         }
     }
 }
