@@ -350,6 +350,114 @@ public partial class @PianoFull : IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""C5"",
+                    ""type"": ""Button"",
+                    ""id"": ""f0ec8e3e-c31d-45f1-a5cc-f56b810701c0"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""CS5"",
+                    ""type"": ""Button"",
+                    ""id"": ""e2c5a779-4f33-489b-852f-1071a6469771"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""D5"",
+                    ""type"": ""Button"",
+                    ""id"": ""7798b11c-d87e-416b-b9fe-9377825d470a"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""DS5"",
+                    ""type"": ""Button"",
+                    ""id"": ""87ad8af1-b53c-44ad-a4da-3cfd24b392f6"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""E5"",
+                    ""type"": ""Button"",
+                    ""id"": ""2ade46ba-e301-4b04-8dbe-7455c72eeeef"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""F5"",
+                    ""type"": ""Button"",
+                    ""id"": ""d81de295-8a33-4b45-8497-e026e16024a8"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""FS5"",
+                    ""type"": ""Button"",
+                    ""id"": ""ee864e9e-9b1d-4ae4-8836-07227c5a2bb4"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""G5"",
+                    ""type"": ""Button"",
+                    ""id"": ""76f29dd4-f5ce-49ee-84cf-b601851f27c8"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""GS5"",
+                    ""type"": ""Button"",
+                    ""id"": ""2bb72080-74c2-4513-8e75-6b4b17082875"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""A5"",
+                    ""type"": ""Button"",
+                    ""id"": ""025643fa-8ee2-48d0-9756-674ba9c07da1"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""AS5"",
+                    ""type"": ""Button"",
+                    ""id"": ""7621da6e-090b-4a41-bb7b-406edf25c50f"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""B5"",
+                    ""type"": ""Button"",
+                    ""id"": ""b782f4a2-0f05-483c-a6b0-1ceec998a453"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
                 }
             ],
             ""bindings"": [
@@ -748,6 +856,138 @@ public partial class @PianoFull : IInputActionCollection2, IDisposable
                     ""action"": ""B4"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""9dad951f-6edb-4985-823f-cdad63ddee20"",
+                    ""path"": ""<MidiDevice>/note072"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""C5"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""2207bc79-c2f4-4794-bc7d-793608bb0638"",
+                    ""path"": ""<MidiDevice>/note073"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""CS5"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""d130a9ab-0cf5-424a-a9c9-8df71d5bcadc"",
+                    ""path"": ""<MidiDevice>/note074"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""D5"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""33adf2ff-21c0-4c22-93f9-c743f71ca5ab"",
+                    ""path"": ""<MidiDevice>/note075"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""DS5"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""3771f194-f69a-46cf-9f6c-deacd7b1dc24"",
+                    ""path"": ""<MidiDevice>/note076"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""E5"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""63c500b3-bb43-474c-bb21-a236f49900f6"",
+                    ""path"": ""<MidiDevice>/note077"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""F5"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""3e98f571-ccd0-4725-813c-d67d3871526e"",
+                    ""path"": ""<MidiDevice>/note078"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""FS5"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""32408521-e682-4023-91b0-876287ad4915"",
+                    ""path"": ""<MidiDevice>/note079"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""G5"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""bf3a79c6-9c3e-406d-928a-de99114f69d5"",
+                    ""path"": ""<MidiDevice>/note080"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""GS5"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""0f91a29a-59df-4f98-9f17-27d743e82c84"",
+                    ""path"": ""<MidiDevice>/note081"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""A5"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""00d4f502-3f63-4655-bca8-97c1dfec7517"",
+                    ""path"": ""<MidiDevice>/note082"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""AS5"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""bc0a0507-97c8-4b6a-b07b-333e0cd0f996"",
+                    ""path"": ""<MidiDevice>/note083"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""B5"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         }
@@ -792,6 +1032,18 @@ public partial class @PianoFull : IInputActionCollection2, IDisposable
         m_Piano_A4 = m_Piano.FindAction("A4", throwIfNotFound: true);
         m_Piano_AS4 = m_Piano.FindAction("AS4", throwIfNotFound: true);
         m_Piano_B4 = m_Piano.FindAction("B4", throwIfNotFound: true);
+        m_Piano_C5 = m_Piano.FindAction("C5", throwIfNotFound: true);
+        m_Piano_CS5 = m_Piano.FindAction("CS5", throwIfNotFound: true);
+        m_Piano_D5 = m_Piano.FindAction("D5", throwIfNotFound: true);
+        m_Piano_DS5 = m_Piano.FindAction("DS5", throwIfNotFound: true);
+        m_Piano_E5 = m_Piano.FindAction("E5", throwIfNotFound: true);
+        m_Piano_F5 = m_Piano.FindAction("F5", throwIfNotFound: true);
+        m_Piano_FS5 = m_Piano.FindAction("FS5", throwIfNotFound: true);
+        m_Piano_G5 = m_Piano.FindAction("G5", throwIfNotFound: true);
+        m_Piano_GS5 = m_Piano.FindAction("GS5", throwIfNotFound: true);
+        m_Piano_A5 = m_Piano.FindAction("A5", throwIfNotFound: true);
+        m_Piano_AS5 = m_Piano.FindAction("AS5", throwIfNotFound: true);
+        m_Piano_B5 = m_Piano.FindAction("B5", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -887,6 +1139,18 @@ public partial class @PianoFull : IInputActionCollection2, IDisposable
     private readonly InputAction m_Piano_A4;
     private readonly InputAction m_Piano_AS4;
     private readonly InputAction m_Piano_B4;
+    private readonly InputAction m_Piano_C5;
+    private readonly InputAction m_Piano_CS5;
+    private readonly InputAction m_Piano_D5;
+    private readonly InputAction m_Piano_DS5;
+    private readonly InputAction m_Piano_E5;
+    private readonly InputAction m_Piano_F5;
+    private readonly InputAction m_Piano_FS5;
+    private readonly InputAction m_Piano_G5;
+    private readonly InputAction m_Piano_GS5;
+    private readonly InputAction m_Piano_A5;
+    private readonly InputAction m_Piano_AS5;
+    private readonly InputAction m_Piano_B5;
     public struct PianoActions
     {
         private @PianoFull m_Wrapper;
@@ -927,6 +1191,18 @@ public partial class @PianoFull : IInputActionCollection2, IDisposable
         public InputAction @A4 => m_Wrapper.m_Piano_A4;
         public InputAction @AS4 => m_Wrapper.m_Piano_AS4;
         public InputAction @B4 => m_Wrapper.m_Piano_B4;
+        public InputAction @C5 => m_Wrapper.m_Piano_C5;
+        public InputAction @CS5 => m_Wrapper.m_Piano_CS5;
+        public InputAction @D5 => m_Wrapper.m_Piano_D5;
+        public InputAction @DS5 => m_Wrapper.m_Piano_DS5;
+        public InputAction @E5 => m_Wrapper.m_Piano_E5;
+        public InputAction @F5 => m_Wrapper.m_Piano_F5;
+        public InputAction @FS5 => m_Wrapper.m_Piano_FS5;
+        public InputAction @G5 => m_Wrapper.m_Piano_G5;
+        public InputAction @GS5 => m_Wrapper.m_Piano_GS5;
+        public InputAction @A5 => m_Wrapper.m_Piano_A5;
+        public InputAction @AS5 => m_Wrapper.m_Piano_AS5;
+        public InputAction @B5 => m_Wrapper.m_Piano_B5;
         public InputActionMap Get() { return m_Wrapper.m_Piano; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -1044,6 +1320,42 @@ public partial class @PianoFull : IInputActionCollection2, IDisposable
                 @B4.started -= m_Wrapper.m_PianoActionsCallbackInterface.OnB4;
                 @B4.performed -= m_Wrapper.m_PianoActionsCallbackInterface.OnB4;
                 @B4.canceled -= m_Wrapper.m_PianoActionsCallbackInterface.OnB4;
+                @C5.started -= m_Wrapper.m_PianoActionsCallbackInterface.OnC5;
+                @C5.performed -= m_Wrapper.m_PianoActionsCallbackInterface.OnC5;
+                @C5.canceled -= m_Wrapper.m_PianoActionsCallbackInterface.OnC5;
+                @CS5.started -= m_Wrapper.m_PianoActionsCallbackInterface.OnCS5;
+                @CS5.performed -= m_Wrapper.m_PianoActionsCallbackInterface.OnCS5;
+                @CS5.canceled -= m_Wrapper.m_PianoActionsCallbackInterface.OnCS5;
+                @D5.started -= m_Wrapper.m_PianoActionsCallbackInterface.OnD5;
+                @D5.performed -= m_Wrapper.m_PianoActionsCallbackInterface.OnD5;
+                @D5.canceled -= m_Wrapper.m_PianoActionsCallbackInterface.OnD5;
+                @DS5.started -= m_Wrapper.m_PianoActionsCallbackInterface.OnDS5;
+                @DS5.performed -= m_Wrapper.m_PianoActionsCallbackInterface.OnDS5;
+                @DS5.canceled -= m_Wrapper.m_PianoActionsCallbackInterface.OnDS5;
+                @E5.started -= m_Wrapper.m_PianoActionsCallbackInterface.OnE5;
+                @E5.performed -= m_Wrapper.m_PianoActionsCallbackInterface.OnE5;
+                @E5.canceled -= m_Wrapper.m_PianoActionsCallbackInterface.OnE5;
+                @F5.started -= m_Wrapper.m_PianoActionsCallbackInterface.OnF5;
+                @F5.performed -= m_Wrapper.m_PianoActionsCallbackInterface.OnF5;
+                @F5.canceled -= m_Wrapper.m_PianoActionsCallbackInterface.OnF5;
+                @FS5.started -= m_Wrapper.m_PianoActionsCallbackInterface.OnFS5;
+                @FS5.performed -= m_Wrapper.m_PianoActionsCallbackInterface.OnFS5;
+                @FS5.canceled -= m_Wrapper.m_PianoActionsCallbackInterface.OnFS5;
+                @G5.started -= m_Wrapper.m_PianoActionsCallbackInterface.OnG5;
+                @G5.performed -= m_Wrapper.m_PianoActionsCallbackInterface.OnG5;
+                @G5.canceled -= m_Wrapper.m_PianoActionsCallbackInterface.OnG5;
+                @GS5.started -= m_Wrapper.m_PianoActionsCallbackInterface.OnGS5;
+                @GS5.performed -= m_Wrapper.m_PianoActionsCallbackInterface.OnGS5;
+                @GS5.canceled -= m_Wrapper.m_PianoActionsCallbackInterface.OnGS5;
+                @A5.started -= m_Wrapper.m_PianoActionsCallbackInterface.OnA5;
+                @A5.performed -= m_Wrapper.m_PianoActionsCallbackInterface.OnA5;
+                @A5.canceled -= m_Wrapper.m_PianoActionsCallbackInterface.OnA5;
+                @AS5.started -= m_Wrapper.m_PianoActionsCallbackInterface.OnAS5;
+                @AS5.performed -= m_Wrapper.m_PianoActionsCallbackInterface.OnAS5;
+                @AS5.canceled -= m_Wrapper.m_PianoActionsCallbackInterface.OnAS5;
+                @B5.started -= m_Wrapper.m_PianoActionsCallbackInterface.OnB5;
+                @B5.performed -= m_Wrapper.m_PianoActionsCallbackInterface.OnB5;
+                @B5.canceled -= m_Wrapper.m_PianoActionsCallbackInterface.OnB5;
             }
             m_Wrapper.m_PianoActionsCallbackInterface = instance;
             if (instance != null)
@@ -1156,6 +1468,42 @@ public partial class @PianoFull : IInputActionCollection2, IDisposable
                 @B4.started += instance.OnB4;
                 @B4.performed += instance.OnB4;
                 @B4.canceled += instance.OnB4;
+                @C5.started += instance.OnC5;
+                @C5.performed += instance.OnC5;
+                @C5.canceled += instance.OnC5;
+                @CS5.started += instance.OnCS5;
+                @CS5.performed += instance.OnCS5;
+                @CS5.canceled += instance.OnCS5;
+                @D5.started += instance.OnD5;
+                @D5.performed += instance.OnD5;
+                @D5.canceled += instance.OnD5;
+                @DS5.started += instance.OnDS5;
+                @DS5.performed += instance.OnDS5;
+                @DS5.canceled += instance.OnDS5;
+                @E5.started += instance.OnE5;
+                @E5.performed += instance.OnE5;
+                @E5.canceled += instance.OnE5;
+                @F5.started += instance.OnF5;
+                @F5.performed += instance.OnF5;
+                @F5.canceled += instance.OnF5;
+                @FS5.started += instance.OnFS5;
+                @FS5.performed += instance.OnFS5;
+                @FS5.canceled += instance.OnFS5;
+                @G5.started += instance.OnG5;
+                @G5.performed += instance.OnG5;
+                @G5.canceled += instance.OnG5;
+                @GS5.started += instance.OnGS5;
+                @GS5.performed += instance.OnGS5;
+                @GS5.canceled += instance.OnGS5;
+                @A5.started += instance.OnA5;
+                @A5.performed += instance.OnA5;
+                @A5.canceled += instance.OnA5;
+                @AS5.started += instance.OnAS5;
+                @AS5.performed += instance.OnAS5;
+                @AS5.canceled += instance.OnAS5;
+                @B5.started += instance.OnB5;
+                @B5.performed += instance.OnB5;
+                @B5.canceled += instance.OnB5;
             }
         }
     }
@@ -1198,5 +1546,17 @@ public partial class @PianoFull : IInputActionCollection2, IDisposable
         void OnA4(InputAction.CallbackContext context);
         void OnAS4(InputAction.CallbackContext context);
         void OnB4(InputAction.CallbackContext context);
+        void OnC5(InputAction.CallbackContext context);
+        void OnCS5(InputAction.CallbackContext context);
+        void OnD5(InputAction.CallbackContext context);
+        void OnDS5(InputAction.CallbackContext context);
+        void OnE5(InputAction.CallbackContext context);
+        void OnF5(InputAction.CallbackContext context);
+        void OnFS5(InputAction.CallbackContext context);
+        void OnG5(InputAction.CallbackContext context);
+        void OnGS5(InputAction.CallbackContext context);
+        void OnA5(InputAction.CallbackContext context);
+        void OnAS5(InputAction.CallbackContext context);
+        void OnB5(InputAction.CallbackContext context);
     }
 }

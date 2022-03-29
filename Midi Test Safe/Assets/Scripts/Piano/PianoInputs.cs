@@ -44,6 +44,18 @@ public class PianoInputs : MonoBehaviour
     public AudioClip A3;
     public AudioClip AS3;
     public AudioClip B3;
+    public AudioClip C4;
+    public AudioClip CS4;
+    public AudioClip D4;
+    public AudioClip DS4;
+    public AudioClip E4;
+    public AudioClip F4;
+    public AudioClip FS4;
+    public AudioClip G4;
+    public AudioClip GS4;
+    public AudioClip A4;
+    public AudioClip AS4;
+    public AudioClip B4;
 
     private void Awake()
     {
@@ -336,6 +348,102 @@ public class PianoInputs : MonoBehaviour
         if (context.performed)
         {
             Piano.PlayOneShot(B3);
+        }
+    }
+
+    public void onC4(InputAction.CallbackContext context)
+    {
+        if (context.performed)
+        {
+            Piano.PlayOneShot(C4);
+        }
+    }
+
+    public void onCS4(InputAction.CallbackContext context)
+    {
+        if (context.performed)
+        {
+            Piano.PlayOneShot(CS4);
+        }
+    }
+
+    public void onD4(InputAction.CallbackContext context)
+    {
+        if (context.performed)
+        {
+            Piano.PlayOneShot(D4);
+        }
+    }
+
+    public void onDS4(InputAction.CallbackContext context)
+    {
+        if (context.performed)
+        {
+            Piano.PlayOneShot(DS4);
+        }
+    }
+
+    public void onE4(InputAction.CallbackContext context)
+    {
+        if (context.performed)
+        {
+            Piano.PlayOneShot(E4);
+        }
+    }
+
+    public void onF4(InputAction.CallbackContext context)
+    {
+        if (context.performed)
+        {
+            Piano.PlayOneShot(F4);
+        }
+    }
+
+    public void onFS4(InputAction.CallbackContext context)
+    {
+        if (context.performed)
+        {
+            Piano.PlayOneShot(FS4);
+        }
+    }
+
+    public void onG4(InputAction.CallbackContext context)
+    {
+        if (context.performed)
+        {
+            Piano.PlayOneShot(G4);
+        }
+    }
+
+    public void onGS4(InputAction.CallbackContext context)
+    {
+        if (context.performed)
+        {
+            Piano.PlayOneShot(GS4);
+        }
+    }
+
+    public void onA4(InputAction.CallbackContext context)
+    {
+        if (context.performed)
+        {
+            Piano.PlayOneShot(A4);
+        }
+    }
+
+    public void onAS4(InputAction.CallbackContext context)
+    {
+        if (context.performed)
+        {
+            Piano.PlayOneShot(AS4);
+        }
+    }
+
+    public void onB4(InputAction.CallbackContext context)
+    {
+        if (context.performed)
+        {
+            Piano.PlayOneShot(B4);
         }
     }
 }

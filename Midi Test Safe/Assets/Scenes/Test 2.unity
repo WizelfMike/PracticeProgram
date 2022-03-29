@@ -437,6 +437,18 @@ MonoBehaviour:
   A3: {fileID: 8300000, guid: 34b32e71d08d45c4e82d25cdcdf0d59a, type: 3}
   AS3: {fileID: 8300000, guid: abf9996f44969f345b829d44fea66c45, type: 3}
   B3: {fileID: 8300000, guid: d07bf32bf7305b04d854c703b56d29d0, type: 3}
+  C4: {fileID: 8300000, guid: 3f3a0781e428fe84fbd43ee908288d12, type: 3}
+  CS4: {fileID: 8300000, guid: 9e0288d81ba3e2841affe6cf91aca5bd, type: 3}
+  D4: {fileID: 8300000, guid: 5938ee2e8a4cd384eb992c0649d0047e, type: 3}
+  DS4: {fileID: 8300000, guid: d6246cda4dffc7642816c3e464326c66, type: 3}
+  E4: {fileID: 8300000, guid: 80d28eff33b48d944ace656911f0c013, type: 3}
+  F4: {fileID: 8300000, guid: 14ab9a85322d13d4194e551dd53f3cf3, type: 3}
+  FS4: {fileID: 8300000, guid: df16dc3566707c948b77f4d7e7ae300f, type: 3}
+  G4: {fileID: 8300000, guid: 6ae4bb35f06b27d479de3ba4edce83b6, type: 3}
+  GS4: {fileID: 8300000, guid: d0d645aa15e1cb847a376811c5babe50, type: 3}
+  A4: {fileID: 8300000, guid: 81011c0b13333c94299d804ea0263920, type: 3}
+  AS4: {fileID: 8300000, guid: 86f1f5cf8f0bc324d81e9ced1b351b8f, type: 3}
+  B4: {fileID: 8300000, guid: d0c17e0aaec4f90408b579fb74c8408f, type: 3}
 --- !u!114 &473745094
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1038,6 +1050,198 @@ MonoBehaviour:
         m_CallState: 2
     m_ActionId: 562ffeef-a34e-4f45-9a03-b78e3806895e
     m_ActionName: Piano/B4
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 473745093}
+        m_TargetAssemblyTypeName: PianoInputs, Assembly-CSharp
+        m_MethodName: onC4
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: f0ec8e3e-c31d-45f1-a5cc-f56b810701c0
+    m_ActionName: Piano/C5
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 473745093}
+        m_TargetAssemblyTypeName: PianoInputs, Assembly-CSharp
+        m_MethodName: onCS4
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: e2c5a779-4f33-489b-852f-1071a6469771
+    m_ActionName: Piano/CS5
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 473745093}
+        m_TargetAssemblyTypeName: PianoInputs, Assembly-CSharp
+        m_MethodName: onD4
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: 7798b11c-d87e-416b-b9fe-9377825d470a
+    m_ActionName: Piano/D5
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 473745093}
+        m_TargetAssemblyTypeName: PianoInputs, Assembly-CSharp
+        m_MethodName: onDS4
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: 87ad8af1-b53c-44ad-a4da-3cfd24b392f6
+    m_ActionName: Piano/DS5
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 473745093}
+        m_TargetAssemblyTypeName: PianoInputs, Assembly-CSharp
+        m_MethodName: onE4
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: 2ade46ba-e301-4b04-8dbe-7455c72eeeef
+    m_ActionName: Piano/E5
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 473745093}
+        m_TargetAssemblyTypeName: PianoInputs, Assembly-CSharp
+        m_MethodName: onF4
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: d81de295-8a33-4b45-8497-e026e16024a8
+    m_ActionName: Piano/F5
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 473745093}
+        m_TargetAssemblyTypeName: PianoInputs, Assembly-CSharp
+        m_MethodName: onFS4
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: ee864e9e-9b1d-4ae4-8836-07227c5a2bb4
+    m_ActionName: Piano/FS5
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 473745093}
+        m_TargetAssemblyTypeName: PianoInputs, Assembly-CSharp
+        m_MethodName: onG4
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: 76f29dd4-f5ce-49ee-84cf-b601851f27c8
+    m_ActionName: Piano/G5
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 473745093}
+        m_TargetAssemblyTypeName: PianoInputs, Assembly-CSharp
+        m_MethodName: onGS4
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: 2bb72080-74c2-4513-8e75-6b4b17082875
+    m_ActionName: Piano/GS5
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 473745093}
+        m_TargetAssemblyTypeName: PianoInputs, Assembly-CSharp
+        m_MethodName: onA4
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: 025643fa-8ee2-48d0-9756-674ba9c07da1
+    m_ActionName: Piano/A5
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 473745093}
+        m_TargetAssemblyTypeName: PianoInputs, Assembly-CSharp
+        m_MethodName: onAS4
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: 7621da6e-090b-4a41-bb7b-406edf25c50f
+    m_ActionName: Piano/AS5
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 473745093}
+        m_TargetAssemblyTypeName: PianoInputs, Assembly-CSharp
+        m_MethodName: onB4
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: b782f4a2-0f05-483c-a6b0-1ceec998a453
+    m_ActionName: Piano/B5
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
   m_DefaultActionMap: Piano
