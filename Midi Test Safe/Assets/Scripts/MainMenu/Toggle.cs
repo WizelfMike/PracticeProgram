@@ -5,6 +5,7 @@ using UnityEngine;
 public class Toggle : MonoBehaviour
 {
     public GameObject toActivate;
+    public ButtonTest buttonTest;
 
     public bool isActive;
 
@@ -15,8 +16,9 @@ public class Toggle : MonoBehaviour
 
     public void ToggleOnOf()
     {
-        if (!isActive)
+        if (!isActive && buttonTest.lifeCounter > 1)
         {
+            StartCoroutine(buttonTest.LoseLife());
             toActivate.SetActive(true);
             isActive = true;
         }

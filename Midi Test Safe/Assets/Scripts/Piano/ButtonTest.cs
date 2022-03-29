@@ -1,7 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
 using TMPro;
 using UnityEngine.SceneManagement;
 public class ButtonTest : MonoBehaviour
@@ -10,7 +9,7 @@ public class ButtonTest : MonoBehaviour
     bool keyPressed;
     string chosenKey;
     int pointCounter;
-    int lifeCounter;
+    public int lifeCounter;
 
     public Renderer render;
     public TextMeshProUGUI keyText;
@@ -32,9 +31,27 @@ public class ButtonTest : MonoBehaviour
         //render.enabled = false;
     }
 
-    private void Update()
+    public void UpdateUI()
     {
+        pointText.SetText("Points: " + pointCounter);
+        lifeText.SetText("Lives: " + lifeCounter);
+    }
 
+    public IEnumerator LoseLife()
+    {
+        if (lifeCounter > 1)
+        {
+            lifeCounter -= 1;
+            UpdateUI();
+        }
+        else
+        {
+            lifeCounter -= 1;
+            UpdateUI();
+            keyText.SetText("Out of lives!");
+            yield return new WaitForSeconds(3);
+            StartCoroutine(RestartGame());
+        }
     }
 
     private void chooseRandomKey()
@@ -55,8 +72,7 @@ public class ButtonTest : MonoBehaviour
         yield return new WaitForSeconds(1);
         pointCounter = 0;
         lifeCounter = 3;
-        pointText.SetText("Points: " + pointCounter);
-        lifeText.SetText("Lives: " + lifeCounter);
+        UpdateUI();
         chooseRandomKey();
     }
 
@@ -71,7 +87,7 @@ public class ButtonTest : MonoBehaviour
                 prompActive = false;
                 pointCounter += 1;
                 keyText.SetText("Correct!");
-                pointText.SetText("Points: " + pointCounter);
+                UpdateUI();
                 yield return new WaitForSeconds(2);
                 if(pointCounter >= 10)
                 {
@@ -88,21 +104,8 @@ public class ButtonTest : MonoBehaviour
                 keyText.SetText("Incorrect!");
                 prompActive = false;
                 yield return new WaitForSeconds(2);
-                if(lifeCounter > 1)
-                {
-                    lifeCounter -= 1;
-                    lifeText.SetText("Lives: " + lifeCounter);
-                    chooseRandomKey();
-                }
-                else
-                {
-                    lifeCounter -= 1;
-                    lifeText.SetText("Lives: " + lifeCounter);
-                    keyText.SetText("Out of lives!");
-                    yield return new WaitForSeconds(3);
-                    StartCoroutine(RestartGame());
-                }
-            
+                chooseRandomKey();
+                StartCoroutine(LoseLife());
             }
             else
             {
