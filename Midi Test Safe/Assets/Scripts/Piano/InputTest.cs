@@ -5,8 +5,9 @@ using UnityEngine.InputSystem;
 
 public class InputTest : MonoBehaviour
 {
-    private ButtonTest pressButton;
     public Midi pianoController;
+    private ButtonTest pressButton;
+    private Toggle activeSheet;
 
     private void Awake()
     {
@@ -22,7 +23,7 @@ public class InputTest : MonoBehaviour
 
     public void onC(InputAction.CallbackContext context)
     {
-        if (context.performed)
+        if (context.performed && activeSheet.isActive == false)
         {
             StartCoroutine(pressButton.checkCorrect("C"));
             Debug.Log("C note has been hit");
@@ -31,7 +32,7 @@ public class InputTest : MonoBehaviour
 
     public void onCSharp(InputAction.CallbackContext context)
     {
-        if (context.performed)
+        if (context.performed && activeSheet.isActive == false)
         {
             StartCoroutine(pressButton.checkCorrect("C#"));
             Debug.Log("C# note has been hit");
@@ -40,7 +41,7 @@ public class InputTest : MonoBehaviour
 
     public void onD(InputAction.CallbackContext context)
     {
-        if (context.performed)
+        if (context.performed && activeSheet.isActive == false)
         {
             StartCoroutine(pressButton.checkCorrect("D"));
             Debug.Log("D note has been hit");
@@ -49,7 +50,7 @@ public class InputTest : MonoBehaviour
 
     public void onDSharp(InputAction.CallbackContext context)
     {
-        if (context.performed)
+        if (context.performed && activeSheet.isActive == false)
         {
             StartCoroutine(pressButton.checkCorrect("D#"));
             Debug.Log("D# note has been hit");
@@ -58,7 +59,7 @@ public class InputTest : MonoBehaviour
 
     public void onE(InputAction.CallbackContext context)
     {
-        if (context.performed)
+        if (context.performed && activeSheet.isActive == false)
         {
             StartCoroutine(pressButton.checkCorrect("E"));
             Debug.Log("E note has been hit");
@@ -67,7 +68,7 @@ public class InputTest : MonoBehaviour
 
     public void onF(InputAction.CallbackContext context)
     {
-        if (context.performed)
+        if (context.performed && activeSheet.isActive == false)
         {
             StartCoroutine(pressButton.checkCorrect("F"));
             Debug.Log("F note has been hit");
@@ -76,7 +77,7 @@ public class InputTest : MonoBehaviour
 
     public void onFSharp(InputAction.CallbackContext context)
     {
-        if (context.performed)
+        if (context.performed && activeSheet.isActive == false)
         {
             StartCoroutine(pressButton.checkCorrect("F#"));
             Debug.Log("F# note has been hit");
@@ -85,7 +86,7 @@ public class InputTest : MonoBehaviour
 
     public void onG(InputAction.CallbackContext context)
     {
-        if (context.performed)
+        if (context.performed && activeSheet.isActive == false)
         {
             StartCoroutine(pressButton.checkCorrect("G"));
             Debug.Log("G note has been hit");
@@ -94,7 +95,7 @@ public class InputTest : MonoBehaviour
 
     public void onGSharp(InputAction.CallbackContext context)
     {
-        if (context.performed)
+        if (context.performed && activeSheet.isActive == false)
         {
             StartCoroutine(pressButton.checkCorrect("G#"));
             Debug.Log("G# note has been hit");
@@ -103,7 +104,7 @@ public class InputTest : MonoBehaviour
 
     public void onA(InputAction.CallbackContext context)
     {
-        if (context.performed)
+        if (context.performed && activeSheet.isActive == false)
         {
             StartCoroutine(pressButton.checkCorrect("A"));
             Debug.Log("A note has been hit");
@@ -112,7 +113,7 @@ public class InputTest : MonoBehaviour
 
     public void onASharp(InputAction.CallbackContext context)
     {
-        if (context.performed)
+        if (context.performed && activeSheet.isActive == false)
         {
             StartCoroutine(pressButton.checkCorrect("A#"));
             Debug.Log("A# note has been hit");
@@ -121,7 +122,7 @@ public class InputTest : MonoBehaviour
 
     public void onB(InputAction.CallbackContext context)
     {
-        if (context.performed)
+        if (context.performed && activeSheet.isActive == false)
         {
             StartCoroutine(pressButton.checkCorrect("B"));
             Debug.Log("B note has been hit");
