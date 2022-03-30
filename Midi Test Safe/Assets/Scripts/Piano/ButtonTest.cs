@@ -5,13 +5,11 @@ using TMPro;
 using UnityEngine.SceneManagement;
 public class ButtonTest : MonoBehaviour
 {
-    bool prompActive;
-    bool keyPressed;
+    public bool prompActive;
+    public int lifeCounter;
     string chosenKey;
     int pointCounter;
-    public int lifeCounter;
 
-    public Renderer render;
     public TextMeshProUGUI keyText;
     public TextMeshProUGUI pointText;
     public TextMeshProUGUI lifeText;
@@ -24,11 +22,8 @@ public class ButtonTest : MonoBehaviour
     {
         pointCounter = 0;
         lifeCounter = 3;
-        keyPressed = false;
         prompActive = false;
         chooseRandomKey();
-        render = GetComponent<Renderer>();
-        //render.enabled = false;
     }
 
     public void UpdateUI()
@@ -43,6 +38,7 @@ public class ButtonTest : MonoBehaviour
         {
             lifeCounter -= 1;
             UpdateUI();
+            chooseRandomKey();
         }
         else
         {
@@ -56,10 +52,9 @@ public class ButtonTest : MonoBehaviour
 
     private void chooseRandomKey()
     {
-        if (prompActive == false)
+        if (!prompActive)
         {
             prompActive = true;
-            //render.enabled = true;
             chosenKey = test[Random.Range(0, test.Length)];
             keyText.SetText(chosenKey);
             Debug.Log(chosenKey);
@@ -72,50 +67,45 @@ public class ButtonTest : MonoBehaviour
         yield return new WaitForSeconds(1);
         pointCounter = 0;
         lifeCounter = 3;
+        prompActive = false;
         UpdateUI();
         chooseRandomKey();
     }
 
     public IEnumerator checkCorrect(string keyInput)
     {
-        if (keyPressed == false)
+        if (keyInput == chosenKey)
         {
-            keyPressed = true;
-            if (keyInput == chosenKey)
+            //Code voor goede toets
+            pointCounter += 1;
+            keyText.SetText("Correct!");
+            UpdateUI();
+            prompActive = false;
+            yield return new WaitForSeconds(2);
+            if(pointCounter >= 10)
             {
-                //Code voor goede code
-                prompActive = false;
-                pointCounter += 1;
-                keyText.SetText("Correct!");
-                UpdateUI();
-                yield return new WaitForSeconds(2);
-                if(pointCounter >= 10)
-                {
-                    SceneManager.LoadScene(winScene);
-                }
-                else
-                {
-                    chooseRandomKey();                
-                }
-            }
-            else if (keyInput != chosenKey)
-            {
-                //Code voor verkeerde toets
-                keyText.SetText("Incorrect!");
-                prompActive = false;
-                yield return new WaitForSeconds(2);
-                chooseRandomKey();
-                StartCoroutine(LoseLife());
+                SceneManager.LoadScene(winScene);
             }
             else
             {
-                Debug.Log("Fout?");
-                //Foutcode?
-                prompActive = false;
-                yield return new WaitForSeconds(2);
-                chooseRandomKey();
+                chooseRandomKey();                
             }
-            keyPressed = false;
+        }
+        else if (keyInput != chosenKey)
+        {
+            //Code voor verkeerde toets
+            keyText.SetText("Incorrect!");
+            prompActive = false;
+            yield return new WaitForSeconds(2);
+            StartCoroutine(LoseLife());
+        }
+        else
+        {
+            Debug.Log("Fout?");
+            //Foutcode?
+            prompActive = false;
+            yield return new WaitForSeconds(2);
+            chooseRandomKey();
         }
     }
 }

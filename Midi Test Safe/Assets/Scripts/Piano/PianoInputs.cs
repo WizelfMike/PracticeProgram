@@ -57,18 +57,18 @@ public class PianoInputs : MonoBehaviour
     public AudioClip AS4;
     public AudioClip B4;
 
+    [SerializeField] private ButtonTest activePrompt;
     [SerializeField] private ToggleImage activeSheet;
 
     private void Awake()
     {
         cpiano = new PianoFull();
-        /*activeSheet = GetComponent<ToggleImage>();*/
         cpiano.Enable();
     }
 
     public void onC1(InputAction.CallbackContext context)
     {
-        if (context.performed && activeSheet.isActive == false)
+        if (context.performed && !activeSheet.isActive && activePrompt.prompActive)
         {
             Piano.PlayOneShot(C1);
         }
@@ -76,7 +76,7 @@ public class PianoInputs : MonoBehaviour
 
     public void onCS1(InputAction.CallbackContext context)
     {
-        if (context.performed && activeSheet.isActive == false)
+        if (context.performed && !activeSheet.isActive && activePrompt.prompActive)
         {
             Piano.PlayOneShot(CS1);
         }
@@ -84,7 +84,7 @@ public class PianoInputs : MonoBehaviour
 
     public void onD1(InputAction.CallbackContext context)
     {
-        if (context.performed && activeSheet.isActive == false)
+        if (context.performed && !activeSheet.isActive && activePrompt.prompActive)
         {
             Piano.PlayOneShot(D1);
         }
@@ -92,7 +92,7 @@ public class PianoInputs : MonoBehaviour
 
     public void onDS1(InputAction.CallbackContext context)
     {
-        if (context.performed && activeSheet.isActive == false)
+        if (context.performed && !activeSheet.isActive && activePrompt.prompActive)
         {
             Piano.PlayOneShot(DS1);
         }
@@ -100,7 +100,7 @@ public class PianoInputs : MonoBehaviour
 
     public void onE1(InputAction.CallbackContext context)
     {
-        if (context.performed && activeSheet.isActive == false)
+        if (context.performed && !activeSheet.isActive && activePrompt.prompActive)
         {
             Piano.PlayOneShot(E1);
         }
@@ -108,7 +108,7 @@ public class PianoInputs : MonoBehaviour
 
     public void onF1(InputAction.CallbackContext context)
     {
-        if (context.performed && activeSheet.isActive == false)
+        if (context.performed && !activeSheet.isActive && activePrompt.prompActive)
         {
             Piano.PlayOneShot(F1);
         }
@@ -116,7 +116,7 @@ public class PianoInputs : MonoBehaviour
 
     public void onFS1(InputAction.CallbackContext context)
     {
-        if (context.performed && activeSheet.isActive == false)
+        if (context.performed && !activeSheet.isActive && activePrompt.prompActive)
         {
             Piano.PlayOneShot(FS1);
         }
@@ -124,7 +124,7 @@ public class PianoInputs : MonoBehaviour
 
     public void onG1(InputAction.CallbackContext context)
     {
-        if (context.performed && activeSheet.isActive == false)
+        if (context.performed && !activeSheet.isActive && activePrompt.prompActive)
         {
             Piano.PlayOneShot(G1);
         }
@@ -132,7 +132,7 @@ public class PianoInputs : MonoBehaviour
 
     public void onGS1(InputAction.CallbackContext context)
     {
-        if (context.performed && activeSheet.isActive == false)
+        if (context.performed && !activeSheet.isActive && activePrompt.prompActive)
         {
             Piano.PlayOneShot(GS1);
         }
@@ -140,7 +140,7 @@ public class PianoInputs : MonoBehaviour
 
     public void onA1(InputAction.CallbackContext context)
     {
-        if (context.performed && activeSheet.isActive == false)
+        if (context.performed && !activeSheet.isActive && activePrompt.prompActive)
         {
             Piano.PlayOneShot(A1);
         }
@@ -148,7 +148,7 @@ public class PianoInputs : MonoBehaviour
 
     public void onAS1(InputAction.CallbackContext context)
     {
-        if (context.performed && activeSheet.isActive == false)
+        if (context.performed && !activeSheet.isActive && activePrompt.prompActive)
         {
             Piano.PlayOneShot(AS1);
         }
@@ -156,7 +156,7 @@ public class PianoInputs : MonoBehaviour
 
     public void onB1(InputAction.CallbackContext context)
     {
-        if (context.performed && activeSheet.isActive == false)
+        if (context.performed && !activeSheet.isActive && activePrompt.prompActive)
         {
             Piano.PlayOneShot(B1);
         }
@@ -164,7 +164,7 @@ public class PianoInputs : MonoBehaviour
 
     public void onC2(InputAction.CallbackContext context)
     {
-        if (context.performed && activeSheet.isActive == false)
+        if (context.performed && !activeSheet.isActive && activePrompt.prompActive)
         {
             Piano.PlayOneShot(C2);
         }
@@ -172,7 +172,7 @@ public class PianoInputs : MonoBehaviour
 
     public void onCS2(InputAction.CallbackContext context)
     {
-        if (context.performed && activeSheet.isActive == false)
+        if (context.performed && !activeSheet.isActive && activePrompt.prompActive)
         {
             Piano.PlayOneShot(CS2);
         }
@@ -180,7 +180,7 @@ public class PianoInputs : MonoBehaviour
 
     public void onD2(InputAction.CallbackContext context)
     {
-        if (context.performed && activeSheet.isActive == false)
+        if (context.performed && !activeSheet.isActive && activePrompt.prompActive)
         {
             Piano.PlayOneShot(D2);
         }
@@ -188,7 +188,7 @@ public class PianoInputs : MonoBehaviour
 
     public void onDS2(InputAction.CallbackContext context)
     {
-        if (context.performed && activeSheet.isActive == false)
+        if (context.performed && !activeSheet.isActive && activePrompt.prompActive)
         {
             Piano.PlayOneShot(DS2);
         }
@@ -196,7 +196,7 @@ public class PianoInputs : MonoBehaviour
 
     public void onE2(InputAction.CallbackContext context)
     {
-        if (context.performed && activeSheet.isActive == false)
+        if (context.performed && !activeSheet.isActive && activePrompt.prompActive)
         {
             Piano.PlayOneShot(E2);
         }
@@ -204,7 +204,7 @@ public class PianoInputs : MonoBehaviour
 
     public void onF2(InputAction.CallbackContext context)
     {
-        if (context.performed && activeSheet.isActive == false)
+        if (context.performed && !activeSheet.isActive && activePrompt.prompActive)
         {
             Piano.PlayOneShot(F2);
         }
@@ -212,7 +212,7 @@ public class PianoInputs : MonoBehaviour
 
     public void onFS2(InputAction.CallbackContext context)
     {
-        if (context.performed && activeSheet.isActive == false)
+        if (context.performed && !activeSheet.isActive && activePrompt.prompActive)
         {
             Piano.PlayOneShot(FS2);
         }
@@ -220,7 +220,7 @@ public class PianoInputs : MonoBehaviour
 
     public void onG2(InputAction.CallbackContext context)
     {
-        if (context.performed && activeSheet.isActive == false)
+        if (context.performed && !activeSheet.isActive && activePrompt.prompActive)
         {
             Piano.PlayOneShot(G2);
         }
@@ -228,7 +228,7 @@ public class PianoInputs : MonoBehaviour
 
     public void onGS2(InputAction.CallbackContext context)
     {
-        if (context.performed && activeSheet.isActive == false)
+        if (context.performed && !activeSheet.isActive && activePrompt.prompActive)
         {
             Piano.PlayOneShot(GS2);
         }
@@ -236,7 +236,7 @@ public class PianoInputs : MonoBehaviour
 
     public void onA2(InputAction.CallbackContext context)
     {
-        if (context.performed && activeSheet.isActive == false)
+        if (context.performed && !activeSheet.isActive && activePrompt.prompActive)
         {
             Piano.PlayOneShot(A2);
         }
@@ -244,7 +244,7 @@ public class PianoInputs : MonoBehaviour
 
     public void onAS2(InputAction.CallbackContext context)
     {
-        if (context.performed && activeSheet.isActive == false)
+        if (context.performed && !activeSheet.isActive && activePrompt.prompActive)
         {
             Piano.PlayOneShot(AS2);
         }
@@ -252,7 +252,7 @@ public class PianoInputs : MonoBehaviour
 
     public void onB2(InputAction.CallbackContext context)
     {
-        if (context.performed && activeSheet.isActive == false)
+        if (context.performed && !activeSheet.isActive && activePrompt.prompActive)
         {
             Piano.PlayOneShot(B2);
         }
@@ -260,7 +260,7 @@ public class PianoInputs : MonoBehaviour
 
     public void onC3(InputAction.CallbackContext context)
     {
-        if (context.performed && activeSheet.isActive == false)
+        if (context.performed && !activeSheet.isActive && activePrompt.prompActive)
         {
             Piano.PlayOneShot(C3);
         }
@@ -268,7 +268,7 @@ public class PianoInputs : MonoBehaviour
 
     public void onCS3(InputAction.CallbackContext context)
     {
-        if (context.performed && activeSheet.isActive == false)
+        if (context.performed && !activeSheet.isActive && activePrompt.prompActive)
         {
             Piano.PlayOneShot(CS3);
         }
@@ -276,7 +276,7 @@ public class PianoInputs : MonoBehaviour
 
     public void onD3(InputAction.CallbackContext context)
     {
-        if (context.performed && activeSheet.isActive == false)
+        if (context.performed && !activeSheet.isActive && activePrompt.prompActive)
         {
             Piano.PlayOneShot(D3);
         }
@@ -284,7 +284,7 @@ public class PianoInputs : MonoBehaviour
 
     public void onDS3(InputAction.CallbackContext context)
     {
-        if (context.performed && activeSheet.isActive == false)
+        if (context.performed && !activeSheet.isActive && activePrompt.prompActive)
         {
             Piano.PlayOneShot(DS3);
         }
@@ -292,7 +292,7 @@ public class PianoInputs : MonoBehaviour
 
     public void onE3(InputAction.CallbackContext context)
     {
-        if (context.performed && activeSheet.isActive == false)
+        if (context.performed && !activeSheet.isActive && activePrompt.prompActive)
         {
             Piano.PlayOneShot(E3);
         }
@@ -300,7 +300,7 @@ public class PianoInputs : MonoBehaviour
 
     public void onF3(InputAction.CallbackContext context)
     {
-        if (context.performed && activeSheet.isActive == false)
+        if (context.performed && !activeSheet.isActive && activePrompt.prompActive)
         {
             Piano.PlayOneShot(F3);
         }
@@ -308,7 +308,7 @@ public class PianoInputs : MonoBehaviour
 
     public void onFS3(InputAction.CallbackContext context)
     {
-        if (context.performed && activeSheet.isActive == false)
+        if (context.performed && !activeSheet.isActive && activePrompt.prompActive)
         {
             Piano.PlayOneShot(FS3);
         }
@@ -316,7 +316,7 @@ public class PianoInputs : MonoBehaviour
 
     public void onG3(InputAction.CallbackContext context)
     {
-        if (context.performed && activeSheet.isActive == false)
+        if (context.performed && !activeSheet.isActive && activePrompt.prompActive)
         {
             Piano.PlayOneShot(G3);
         }
@@ -324,7 +324,7 @@ public class PianoInputs : MonoBehaviour
 
     public void onGS3(InputAction.CallbackContext context)
     {
-        if (context.performed && activeSheet.isActive == false)
+        if (context.performed && !activeSheet.isActive && activePrompt.prompActive)
         {
             Piano.PlayOneShot(GS3);
         }
@@ -332,7 +332,7 @@ public class PianoInputs : MonoBehaviour
 
     public void onA3(InputAction.CallbackContext context)
     {
-        if (context.performed && activeSheet.isActive == false)
+        if (context.performed && !activeSheet.isActive && activePrompt.prompActive)
         {
             Piano.PlayOneShot(A3);
         }
@@ -340,7 +340,7 @@ public class PianoInputs : MonoBehaviour
 
     public void onAS3(InputAction.CallbackContext context)
     {
-        if (context.performed && activeSheet.isActive == false)
+        if (context.performed && !activeSheet.isActive && activePrompt.prompActive)
         {
             Piano.PlayOneShot(AS3);
         }
@@ -348,7 +348,7 @@ public class PianoInputs : MonoBehaviour
 
     public void onB3(InputAction.CallbackContext context)
     {
-        if (context.performed && activeSheet.isActive == false)
+        if (context.performed && !activeSheet.isActive && activePrompt.prompActive)
         {
             Piano.PlayOneShot(B3);
         }
@@ -356,7 +356,7 @@ public class PianoInputs : MonoBehaviour
 
     public void onC4(InputAction.CallbackContext context)
     {
-        if (context.performed && activeSheet.isActive == false)
+        if (context.performed && !activeSheet.isActive && activePrompt.prompActive)
         {
             Piano.PlayOneShot(C4);
         }
@@ -364,7 +364,7 @@ public class PianoInputs : MonoBehaviour
 
     public void onCS4(InputAction.CallbackContext context)
     {
-        if (context.performed && activeSheet.isActive == false)
+        if (context.performed && !activeSheet.isActive && activePrompt.prompActive)
         {
             Piano.PlayOneShot(CS4);
         }
@@ -372,7 +372,7 @@ public class PianoInputs : MonoBehaviour
 
     public void onD4(InputAction.CallbackContext context)
     {
-        if (context.performed && activeSheet.isActive == false)
+        if (context.performed && !activeSheet.isActive && activePrompt.prompActive)
         {
             Piano.PlayOneShot(D4);
         }
@@ -380,7 +380,7 @@ public class PianoInputs : MonoBehaviour
 
     public void onDS4(InputAction.CallbackContext context)
     {
-        if (context.performed && activeSheet.isActive == false)
+        if (context.performed && !activeSheet.isActive && activePrompt.prompActive)
         {
             Piano.PlayOneShot(DS4);
         }
@@ -388,7 +388,7 @@ public class PianoInputs : MonoBehaviour
 
     public void onE4(InputAction.CallbackContext context)
     {
-        if (context.performed && activeSheet.isActive == false)
+        if (context.performed && !activeSheet.isActive && activePrompt.prompActive)
         {
             Piano.PlayOneShot(E4);
         }
@@ -396,7 +396,7 @@ public class PianoInputs : MonoBehaviour
 
     public void onF4(InputAction.CallbackContext context)
     {
-        if (context.performed && activeSheet.isActive == false)
+        if (context.performed && !activeSheet.isActive && activePrompt.prompActive)
         {
             Piano.PlayOneShot(F4);
         }
@@ -404,7 +404,7 @@ public class PianoInputs : MonoBehaviour
 
     public void onFS4(InputAction.CallbackContext context)
     {
-        if (context.performed && activeSheet.isActive == false)
+        if (context.performed && !activeSheet.isActive && activePrompt.prompActive)
         {
             Piano.PlayOneShot(FS4);
         }
@@ -412,7 +412,7 @@ public class PianoInputs : MonoBehaviour
 
     public void onG4(InputAction.CallbackContext context)
     {
-        if (context.performed && activeSheet.isActive == false)
+        if (context.performed && !activeSheet.isActive && activePrompt.prompActive)
         {
             Piano.PlayOneShot(G4);
         }
@@ -420,7 +420,7 @@ public class PianoInputs : MonoBehaviour
 
     public void onGS4(InputAction.CallbackContext context)
     {
-        if (context.performed && activeSheet.isActive == false)
+        if (context.performed && !activeSheet.isActive && activePrompt.prompActive)
         {
             Piano.PlayOneShot(GS4);
         }
@@ -428,7 +428,7 @@ public class PianoInputs : MonoBehaviour
 
     public void onA4(InputAction.CallbackContext context)
     {
-        if (context.performed && activeSheet.isActive == false)
+        if (context.performed && !activeSheet.isActive && activePrompt.prompActive)
         {
             Piano.PlayOneShot(A4);
         }
@@ -436,7 +436,7 @@ public class PianoInputs : MonoBehaviour
 
     public void onAS4(InputAction.CallbackContext context)
     {
-        if (context.performed && activeSheet.isActive == false)
+        if (context.performed && !activeSheet.isActive && activePrompt.prompActive)
         {
             Piano.PlayOneShot(AS4);
         }
@@ -444,7 +444,7 @@ public class PianoInputs : MonoBehaviour
 
     public void onB4(InputAction.CallbackContext context)
     {
-        if (context.performed && activeSheet.isActive == false)
+        if (context.performed && !activeSheet.isActive && activePrompt.prompActive)
         {
             Piano.PlayOneShot(B4);
         }
