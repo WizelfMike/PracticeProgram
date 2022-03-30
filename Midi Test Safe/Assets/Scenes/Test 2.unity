@@ -449,6 +449,7 @@ MonoBehaviour:
   A4: {fileID: 8300000, guid: 81011c0b13333c94299d804ea0263920, type: 3}
   AS4: {fileID: 8300000, guid: 86f1f5cf8f0bc324d81e9ced1b351b8f, type: 3}
   B4: {fileID: 8300000, guid: d0c17e0aaec4f90408b579fb74c8408f, type: 3}
+  activeSheet: {fileID: 591939841}
 --- !u!114 &473745094
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2178,6 +2179,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2e432ee2b58eaa049881cfc2cefeb7f0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  pressButton: {fileID: 993653874}
+  activeSheet: {fileID: 591939841}
 --- !u!1 &1009944713
 GameObject:
   m_ObjectHideFlags: 0

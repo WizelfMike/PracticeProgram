@@ -6,12 +6,13 @@ using UnityEngine.InputSystem;
 public class InputTest : MonoBehaviour
 {
     public Midi pianoController;
-    private ButtonTest pressButton;
-    private Toggle activeSheet;
+    [SerializeField] private ButtonTest pressButton;
+    [SerializeField] private ToggleImage activeSheet;
 
     private void Awake()
     {
         pressButton = GetComponent<ButtonTest>();
+        /*activeSheet = GetComponent<ToggleImage>();*/
         pianoController = new Midi();
         pianoController.Enable();
     }

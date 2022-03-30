@@ -57,11 +57,12 @@ public class PianoInputs : MonoBehaviour
     public AudioClip AS4;
     public AudioClip B4;
 
-    private Toggle activeSheet;
+    [SerializeField] private ToggleImage activeSheet;
 
     private void Awake()
     {
         cpiano = new PianoFull();
+        /*activeSheet = GetComponent<ToggleImage>();*/
         cpiano.Enable();
     }
 
