@@ -1875,4 +1875,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0f117a111bc4d8441b5380bb09d43947, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mainGame: Test 2
+  mainGame: Quiz
