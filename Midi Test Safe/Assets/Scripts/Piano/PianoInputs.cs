@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.SceneManagement;
 
 public class PianoInputs : MonoBehaviour
 {
@@ -57,396 +58,928 @@ public class PianoInputs : MonoBehaviour
     public AudioClip AS4;
     public AudioClip B4;
 
+    string activeScene;
+
     [SerializeField] private ButtonTest activePrompt;
+    [SerializeField] private FreePlayScript freePlay;
     [SerializeField] private ToggleImage activeSheet;
 
     private void Awake()
     {
+        activeScene = SceneManager.GetActiveScene().name;
         cpiano = new PianoFull();
         cpiano.Enable();
     }
 
     public void onC1(InputAction.CallbackContext context)
     {
-        if (context.performed && !activeSheet.isActive && activePrompt.prompActive)
+        switch (activeScene)
         {
-            Piano.PlayOneShot(C1);
+            case "Quiz":
+                if (context.performed && !activeSheet.isActive && activePrompt.prompActive)
+                {
+                    Piano.PlayOneShot(C1);
+                }
+                break;
+            case "FreePlay":
+                if (context.performed)
+                {
+                    Piano.PlayOneShot(C1);
+                }
+                break;
         }
     }
 
     public void onCS1(InputAction.CallbackContext context)
     {
-        if (context.performed && !activeSheet.isActive && activePrompt.prompActive)
+        switch (activeScene)
         {
-            Piano.PlayOneShot(CS1);
+            case "Quiz":
+                if (context.performed && !activeSheet.isActive && activePrompt.prompActive)
+                {
+                    Piano.PlayOneShot(CS1);
+                }
+                break;
+            case "FreePlay":
+                if (context.performed)
+                {
+                    Piano.PlayOneShot(CS1);
+                }
+                break;
         }
     }
 
     public void onD1(InputAction.CallbackContext context)
     {
-        if (context.performed && !activeSheet.isActive && activePrompt.prompActive)
+        switch (activeScene)
         {
-            Piano.PlayOneShot(D1);
+            case "Quiz":
+                if (context.performed && !activeSheet.isActive && activePrompt.prompActive)
+                {
+                    Piano.PlayOneShot(D1);
+                }
+                break;
+            case "FreePlay":
+                if (context.performed)
+                {
+                    Piano.PlayOneShot(D1);
+                }
+                break;
         }
     }
 
     public void onDS1(InputAction.CallbackContext context)
     {
-        if (context.performed && !activeSheet.isActive && activePrompt.prompActive)
+        switch (activeScene)
         {
-            Piano.PlayOneShot(DS1);
+            case "Quiz":
+                if (context.performed && !activeSheet.isActive && activePrompt.prompActive)
+                {
+                    Piano.PlayOneShot(DS1);
+                }
+                break;
+            case "FreePlay":
+                if (context.performed)
+                {
+                    Piano.PlayOneShot(DS1);
+                }
+                break;
         }
     }
 
     public void onE1(InputAction.CallbackContext context)
     {
-        if (context.performed && !activeSheet.isActive && activePrompt.prompActive)
+        switch (activeScene)
         {
-            Piano.PlayOneShot(E1);
+            case "Quiz":
+                if (context.performed && !activeSheet.isActive && activePrompt.prompActive)
+                {
+                    Piano.PlayOneShot(E1);
+                }
+                break;
+            case "FreePlay":
+                if (context.performed)
+                {
+                    Piano.PlayOneShot(E1);
+                }
+                break;
         }
     }
 
     public void onF1(InputAction.CallbackContext context)
     {
-        if (context.performed && !activeSheet.isActive && activePrompt.prompActive)
+        switch (activeScene)
         {
-            Piano.PlayOneShot(F1);
+            case "Quiz":
+                if (context.performed && !activeSheet.isActive && activePrompt.prompActive)
+                {
+                    Piano.PlayOneShot(F1);
+                }
+                break;
+            case "FreePlay":
+                if (context.performed)
+                {
+                    Piano.PlayOneShot(F1);
+                }
+                break;
         }
     }
 
     public void onFS1(InputAction.CallbackContext context)
     {
-        if (context.performed && !activeSheet.isActive && activePrompt.prompActive)
+        switch (activeScene)
         {
-            Piano.PlayOneShot(FS1);
+            case "Quiz":
+                if (context.performed && !activeSheet.isActive && activePrompt.prompActive)
+                {
+                    Piano.PlayOneShot(FS1);
+                }
+                break;
+            case "FreePlay":
+                if (context.performed)
+                {
+                    Piano.PlayOneShot(FS1);
+                }
+                break;
         }
     }
 
     public void onG1(InputAction.CallbackContext context)
     {
-        if (context.performed && !activeSheet.isActive && activePrompt.prompActive)
+        switch (activeScene)
         {
-            Piano.PlayOneShot(G1);
+            case "Quiz":
+                if (context.performed && !activeSheet.isActive && activePrompt.prompActive)
+                {
+                    Piano.PlayOneShot(G1);
+                }
+                break;
+            case "FreePlay":
+                if (context.performed)
+                {
+                    Piano.PlayOneShot(G1);
+                }
+                break;
         }
     }
 
     public void onGS1(InputAction.CallbackContext context)
     {
-        if (context.performed && !activeSheet.isActive && activePrompt.prompActive)
+        switch (activeScene)
         {
-            Piano.PlayOneShot(GS1);
+            case "Quiz":
+                if (context.performed && !activeSheet.isActive && activePrompt.prompActive)
+                {
+                    Piano.PlayOneShot(GS1);
+                }
+                break;
+            case "FreePlay":
+                if (context.performed)
+                {
+                    Piano.PlayOneShot(GS1);
+                }
+                break;
         }
     }
 
     public void onA1(InputAction.CallbackContext context)
     {
-        if (context.performed && !activeSheet.isActive && activePrompt.prompActive)
+        switch (activeScene)
         {
-            Piano.PlayOneShot(A1);
+            case "Quiz":
+                if (context.performed && !activeSheet.isActive && activePrompt.prompActive)
+                {
+                    Piano.PlayOneShot(A1);
+                }
+                break;
+            case "FreePlay":
+                if (context.performed)
+                {
+                    Piano.PlayOneShot(A1);
+                }
+                break;
         }
     }
 
     public void onAS1(InputAction.CallbackContext context)
     {
-        if (context.performed && !activeSheet.isActive && activePrompt.prompActive)
+        switch (activeScene)
         {
-            Piano.PlayOneShot(AS1);
+            case "Quiz":
+                if (context.performed && !activeSheet.isActive && activePrompt.prompActive)
+                {
+                    Piano.PlayOneShot(AS1);
+                }
+                break;
+            case "FreePlay":
+                if (context.performed)
+                {
+                    Piano.PlayOneShot(AS1);
+                }
+                break;
         }
     }
 
     public void onB1(InputAction.CallbackContext context)
     {
-        if (context.performed && !activeSheet.isActive && activePrompt.prompActive)
+        switch (activeScene)
         {
-            Piano.PlayOneShot(B1);
+            case "Quiz":
+                if (context.performed && !activeSheet.isActive && activePrompt.prompActive)
+                {
+                    Piano.PlayOneShot(B1);
+                }
+                break;
+            case "FreePlay":
+                if (context.performed)
+                {
+                    Piano.PlayOneShot(B1);
+                }
+                break;
         }
     }
 
     public void onC2(InputAction.CallbackContext context)
     {
-        if (context.performed && !activeSheet.isActive && activePrompt.prompActive)
+        switch (activeScene)
         {
-            Piano.PlayOneShot(C2);
+            case "Quiz":
+                if (context.performed && !activeSheet.isActive && activePrompt.prompActive)
+                {
+                    Piano.PlayOneShot(C2);
+                }
+                break;
+            case "FreePlay":
+                if (context.performed)
+                {
+                    Piano.PlayOneShot(C2);
+                }
+                break;
         }
     }
 
     public void onCS2(InputAction.CallbackContext context)
     {
-        if (context.performed && !activeSheet.isActive && activePrompt.prompActive)
+        switch (activeScene)
         {
-            Piano.PlayOneShot(CS2);
+            case "Quiz":
+                if (context.performed && !activeSheet.isActive && activePrompt.prompActive)
+                {
+                    Piano.PlayOneShot(CS2);
+                }
+                break;
+            case "FreePlay":
+                if (context.performed)
+                {
+                    Piano.PlayOneShot(CS2);
+                }
+                break;
         }
     }
 
     public void onD2(InputAction.CallbackContext context)
     {
-        if (context.performed && !activeSheet.isActive && activePrompt.prompActive)
+        switch (activeScene)
         {
-            Piano.PlayOneShot(D2);
+            case "Quiz":
+                if (context.performed && !activeSheet.isActive && activePrompt.prompActive)
+                {
+                    Piano.PlayOneShot(D2);
+                }
+                break;
+            case "FreePlay":
+                if (context.performed)
+                {
+                    Piano.PlayOneShot(D2);
+                }
+                break;
         }
     }
 
     public void onDS2(InputAction.CallbackContext context)
     {
-        if (context.performed && !activeSheet.isActive && activePrompt.prompActive)
+        switch (activeScene)
         {
-            Piano.PlayOneShot(DS2);
+            case "Quiz":
+                if (context.performed && !activeSheet.isActive && activePrompt.prompActive)
+                {
+                    Piano.PlayOneShot(DS2);
+                }
+                break;
+            case "FreePlay":
+                if (context.performed)
+                {
+                    Piano.PlayOneShot(DS2);
+                }
+                break;
         }
     }
 
     public void onE2(InputAction.CallbackContext context)
     {
-        if (context.performed && !activeSheet.isActive && activePrompt.prompActive)
+        switch (activeScene)
         {
-            Piano.PlayOneShot(E2);
+            case "Quiz":
+                if (context.performed && !activeSheet.isActive && activePrompt.prompActive)
+                {
+                    Piano.PlayOneShot(E2);
+                }
+                break;
+            case "FreePlay":
+                if (context.performed)
+                {
+                    Piano.PlayOneShot(E2);
+                }
+                break;
         }
     }
 
     public void onF2(InputAction.CallbackContext context)
     {
-        if (context.performed && !activeSheet.isActive && activePrompt.prompActive)
+        switch (activeScene)
         {
-            Piano.PlayOneShot(F2);
+            case "Quiz":
+                if (context.performed && !activeSheet.isActive && activePrompt.prompActive)
+                {
+                    Piano.PlayOneShot(F2);
+                }
+                break;
+            case "FreePlay":
+                if (context.performed)
+                {
+                    Piano.PlayOneShot(F2);
+                }
+                break;
         }
     }
 
     public void onFS2(InputAction.CallbackContext context)
     {
-        if (context.performed && !activeSheet.isActive && activePrompt.prompActive)
+        switch (activeScene)
         {
-            Piano.PlayOneShot(FS2);
+            case "Quiz":
+                if (context.performed && !activeSheet.isActive && activePrompt.prompActive)
+                {
+                    Piano.PlayOneShot(FS2);
+                }
+                break;
+            case "FreePlay":
+                if (context.performed)
+                {
+                    Piano.PlayOneShot(FS2);
+                }
+                break;
         }
     }
 
     public void onG2(InputAction.CallbackContext context)
     {
-        if (context.performed && !activeSheet.isActive && activePrompt.prompActive)
+        switch (activeScene)
         {
-            Piano.PlayOneShot(G2);
+            case "Quiz":
+                if (context.performed && !activeSheet.isActive && activePrompt.prompActive)
+                {
+                    Piano.PlayOneShot(G2);
+                }
+                break;
+            case "FreePlay":
+                if (context.performed)
+                {
+                    Piano.PlayOneShot(G2);
+                }
+                break;
         }
     }
 
     public void onGS2(InputAction.CallbackContext context)
     {
-        if (context.performed && !activeSheet.isActive && activePrompt.prompActive)
+        switch (activeScene)
         {
-            Piano.PlayOneShot(GS2);
+            case "Quiz":
+                if (context.performed && !activeSheet.isActive && activePrompt.prompActive)
+                {
+                    Piano.PlayOneShot(GS2);
+                }
+                break;
+            case "FreePlay":
+                if (context.performed)
+                {
+                    Piano.PlayOneShot(GS2);
+                }
+                break;
         }
     }
 
     public void onA2(InputAction.CallbackContext context)
     {
-        if (context.performed && !activeSheet.isActive && activePrompt.prompActive)
+        switch (activeScene)
         {
-            Piano.PlayOneShot(A2);
+            case "Quiz":
+                if (context.performed && !activeSheet.isActive && activePrompt.prompActive)
+                {
+                    Piano.PlayOneShot(A2);
+                }
+                break;
+            case "FreePlay":
+                if (context.performed)
+                {
+                    Piano.PlayOneShot(A2);
+                }
+                break;
         }
     }
 
     public void onAS2(InputAction.CallbackContext context)
     {
-        if (context.performed && !activeSheet.isActive && activePrompt.prompActive)
+        switch (activeScene)
         {
-            Piano.PlayOneShot(AS2);
+            case "Quiz":
+                if (context.performed && !activeSheet.isActive && activePrompt.prompActive)
+                {
+                    Piano.PlayOneShot(AS2);
+                }
+                break;
+            case "FreePlay":
+                if (context.performed)
+                {
+                    Piano.PlayOneShot(AS2);
+                }
+                break;
         }
     }
 
     public void onB2(InputAction.CallbackContext context)
     {
-        if (context.performed && !activeSheet.isActive && activePrompt.prompActive)
+        switch (activeScene)
         {
-            Piano.PlayOneShot(B2);
+            case "Quiz":
+                if (context.performed && !activeSheet.isActive && activePrompt.prompActive)
+                {
+                    Piano.PlayOneShot(B2);
+                }
+                break;
+            case "FreePlay":
+                if (context.performed)
+                {
+                    Piano.PlayOneShot(B2);
+                }
+                break;
         }
     }
 
     public void onC3(InputAction.CallbackContext context)
     {
-        if (context.performed && !activeSheet.isActive && activePrompt.prompActive)
+        switch (activeScene)
         {
-            Piano.PlayOneShot(C3);
+            case "Quiz":
+                if (context.performed && !activeSheet.isActive && activePrompt.prompActive)
+                {
+                    Piano.PlayOneShot(C3);
+                }
+                break;
+            case "FreePlay":
+                if (context.performed)
+                {
+                    Piano.PlayOneShot(C3);
+                }
+                break;
         }
     }
 
     public void onCS3(InputAction.CallbackContext context)
     {
-        if (context.performed && !activeSheet.isActive && activePrompt.prompActive)
+        switch (activeScene)
         {
-            Piano.PlayOneShot(CS3);
+            case "Quiz":
+                if (context.performed && !activeSheet.isActive && activePrompt.prompActive)
+                {
+                    Piano.PlayOneShot(CS3);
+                }
+                break;
+            case "FreePlay":
+                if (context.performed)
+                {
+                    Piano.PlayOneShot(CS3);
+                }
+                break;
         }
     }
 
     public void onD3(InputAction.CallbackContext context)
     {
-        if (context.performed && !activeSheet.isActive && activePrompt.prompActive)
+        switch (activeScene)
         {
-            Piano.PlayOneShot(D3);
+            case "Quiz":
+                if (context.performed && !activeSheet.isActive && activePrompt.prompActive)
+                {
+                    Piano.PlayOneShot(D3);
+                }
+                break;
+            case "FreePlay":
+                if (context.performed)
+                {
+                    Piano.PlayOneShot(D3);
+                }
+                break;
         }
     }
 
     public void onDS3(InputAction.CallbackContext context)
     {
-        if (context.performed && !activeSheet.isActive && activePrompt.prompActive)
+        switch (activeScene)
         {
-            Piano.PlayOneShot(DS3);
+            case "Quiz":
+                if (context.performed && !activeSheet.isActive && activePrompt.prompActive)
+                {
+                    Piano.PlayOneShot(DS3);
+                }
+                break;
+            case "FreePlay":
+                if (context.performed)
+                {
+                    Piano.PlayOneShot(DS3);
+                }
+                break;
         }
     }
 
     public void onE3(InputAction.CallbackContext context)
     {
-        if (context.performed && !activeSheet.isActive && activePrompt.prompActive)
+        switch (activeScene)
         {
-            Piano.PlayOneShot(E3);
+            case "Quiz":
+                if (context.performed && !activeSheet.isActive && activePrompt.prompActive)
+                {
+                    Piano.PlayOneShot(E3);
+                }
+                break;
+            case "FreePlay":
+                if (context.performed)
+                {
+                    Piano.PlayOneShot(E3);
+                }
+                break;
         }
     }
 
     public void onF3(InputAction.CallbackContext context)
     {
-        if (context.performed && !activeSheet.isActive && activePrompt.prompActive)
+        switch (activeScene)
         {
-            Piano.PlayOneShot(F3);
+            case "Quiz":
+                if (context.performed && !activeSheet.isActive && activePrompt.prompActive)
+                {
+                    Piano.PlayOneShot(F3);
+                }
+                break;
+            case "FreePlay":
+                if (context.performed)
+                {
+                    Piano.PlayOneShot(F3);
+                }
+                break;
         }
     }
 
     public void onFS3(InputAction.CallbackContext context)
     {
-        if (context.performed && !activeSheet.isActive && activePrompt.prompActive)
+        switch (activeScene)
         {
-            Piano.PlayOneShot(FS3);
+            case "Quiz":
+                if (context.performed && !activeSheet.isActive && activePrompt.prompActive)
+                {
+                    Piano.PlayOneShot(FS3);
+                }
+                break;
+            case "FreePlay":
+                if (context.performed)
+                {
+                    Piano.PlayOneShot(FS3);
+                }
+                break;
         }
     }
 
     public void onG3(InputAction.CallbackContext context)
     {
-        if (context.performed && !activeSheet.isActive && activePrompt.prompActive)
+        switch (activeScene)
         {
-            Piano.PlayOneShot(G3);
+            case "Quiz":
+                if (context.performed && !activeSheet.isActive && activePrompt.prompActive)
+                {
+                    Piano.PlayOneShot(G3);
+                }
+                break;
+            case "FreePlay":
+                if (context.performed)
+                {
+                    Piano.PlayOneShot(G3);
+                }
+                break;
         }
     }
 
     public void onGS3(InputAction.CallbackContext context)
     {
-        if (context.performed && !activeSheet.isActive && activePrompt.prompActive)
+        switch (activeScene)
         {
-            Piano.PlayOneShot(GS3);
+            case "Quiz":
+                if (context.performed && !activeSheet.isActive && activePrompt.prompActive)
+                {
+                    Piano.PlayOneShot(GS3);
+                }
+                break;
+            case "FreePlay":
+                if (context.performed)
+                {
+                    Piano.PlayOneShot(GS3);
+                }
+                break;
         }
     }
 
     public void onA3(InputAction.CallbackContext context)
     {
-        if (context.performed && !activeSheet.isActive && activePrompt.prompActive)
+        switch (activeScene)
         {
-            Piano.PlayOneShot(A3);
+            case "Quiz":
+                if (context.performed && !activeSheet.isActive && activePrompt.prompActive)
+                {
+                    Piano.PlayOneShot(A3);
+                }
+                break;
+            case "FreePlay":
+                if (context.performed)
+                {
+                    Piano.PlayOneShot(A3);
+                }
+                break;
         }
     }
 
     public void onAS3(InputAction.CallbackContext context)
     {
-        if (context.performed && !activeSheet.isActive && activePrompt.prompActive)
+        switch (activeScene)
         {
-            Piano.PlayOneShot(AS3);
+            case "Quiz":
+                if (context.performed && !activeSheet.isActive && activePrompt.prompActive)
+                {
+                    Piano.PlayOneShot(AS3);
+                }
+                break;
+            case "FreePlay":
+                if (context.performed)
+                {
+                    Piano.PlayOneShot(AS3);
+                }
+                break;
         }
     }
 
     public void onB3(InputAction.CallbackContext context)
     {
-        if (context.performed && !activeSheet.isActive && activePrompt.prompActive)
+        switch (activeScene)
         {
-            Piano.PlayOneShot(B3);
+            case "Quiz":
+                if (context.performed && !activeSheet.isActive && activePrompt.prompActive)
+                {
+                    Piano.PlayOneShot(B3);
+                }
+                break;
+            case "FreePlay":
+                if (context.performed)
+                {
+                    Piano.PlayOneShot(B3);
+                }
+                break;
         }
     }
 
     public void onC4(InputAction.CallbackContext context)
     {
-        if (context.performed && !activeSheet.isActive && activePrompt.prompActive)
+        switch (activeScene)
         {
-            Piano.PlayOneShot(C4);
+            case "Quiz":
+                if (context.performed && !activeSheet.isActive && activePrompt.prompActive)
+                {
+                    Piano.PlayOneShot(C4);
+                }
+                break;
+            case "FreePlay":
+                if (context.performed)
+                {
+                    Piano.PlayOneShot(C4);
+                }
+                break;
         }
     }
 
     public void onCS4(InputAction.CallbackContext context)
     {
-        if (context.performed && !activeSheet.isActive && activePrompt.prompActive)
+        switch (activeScene)
         {
-            Piano.PlayOneShot(CS4);
+            case "Quiz":
+                if (context.performed && !activeSheet.isActive && activePrompt.prompActive)
+                {
+                    Piano.PlayOneShot(CS4);
+                }
+                break;
+            case "FreePlay":
+                if (context.performed)
+                {
+                    Piano.PlayOneShot(CS4);
+                }
+                break;
         }
     }
 
     public void onD4(InputAction.CallbackContext context)
     {
-        if (context.performed && !activeSheet.isActive && activePrompt.prompActive)
+        switch (activeScene)
         {
-            Piano.PlayOneShot(D4);
+            case "Quiz":
+                if (context.performed && !activeSheet.isActive && activePrompt.prompActive)
+                {
+                    Piano.PlayOneShot(D4);
+                }
+                break;
+            case "FreePlay":
+                if (context.performed)
+                {
+                    Piano.PlayOneShot(D4);
+                }
+                break;
         }
     }
 
     public void onDS4(InputAction.CallbackContext context)
     {
-        if (context.performed && !activeSheet.isActive && activePrompt.prompActive)
+        switch (activeScene)
         {
-            Piano.PlayOneShot(DS4);
+            case "Quiz":
+                if (context.performed && !activeSheet.isActive && activePrompt.prompActive)
+                {
+                    Piano.PlayOneShot(DS4);
+                }
+                break;
+            case "FreePlay":
+                if (context.performed)
+                {
+                    Piano.PlayOneShot(DS4);
+                }
+                break;
         }
     }
 
     public void onE4(InputAction.CallbackContext context)
     {
-        if (context.performed && !activeSheet.isActive && activePrompt.prompActive)
+        switch (activeScene)
         {
-            Piano.PlayOneShot(E4);
+            case "Quiz":
+                if (context.performed && !activeSheet.isActive && activePrompt.prompActive)
+                {
+                    Piano.PlayOneShot(E4);
+                }
+                break;
+            case "FreePlay":
+                if (context.performed)
+                {
+                    Piano.PlayOneShot(E4);
+                }
+                break;
         }
     }
 
     public void onF4(InputAction.CallbackContext context)
     {
-        if (context.performed && !activeSheet.isActive && activePrompt.prompActive)
+        switch (activeScene)
         {
-            Piano.PlayOneShot(F4);
+            case "Quiz":
+                if (context.performed && !activeSheet.isActive && activePrompt.prompActive)
+                {
+                    Piano.PlayOneShot(F4);
+                }
+                break;
+            case "FreePlay":
+                if (context.performed)
+                {
+                    Piano.PlayOneShot(F4);
+                }
+                break;
         }
     }
 
     public void onFS4(InputAction.CallbackContext context)
     {
-        if (context.performed && !activeSheet.isActive && activePrompt.prompActive)
+        switch (activeScene)
         {
-            Piano.PlayOneShot(FS4);
+            case "Quiz":
+                if (context.performed && !activeSheet.isActive && activePrompt.prompActive)
+                {
+                    Piano.PlayOneShot(FS4);
+                }
+                break;
+            case "FreePlay":
+                if (context.performed)
+                {
+                    Piano.PlayOneShot(FS4);
+                }
+                break;
         }
     }
 
     public void onG4(InputAction.CallbackContext context)
     {
-        if (context.performed && !activeSheet.isActive && activePrompt.prompActive)
+        switch (activeScene)
         {
-            Piano.PlayOneShot(G4);
+            case "Quiz":
+                if (context.performed && !activeSheet.isActive && activePrompt.prompActive)
+                {
+                    Piano.PlayOneShot(G4);
+                }
+                break;
+            case "FreePlay":
+                if (context.performed)
+                {
+                    Piano.PlayOneShot(G4);
+                }
+                break;
         }
     }
 
     public void onGS4(InputAction.CallbackContext context)
     {
-        if (context.performed && !activeSheet.isActive && activePrompt.prompActive)
+        switch (activeScene)
         {
-            Piano.PlayOneShot(GS4);
+            case "Quiz":
+                if (context.performed && !activeSheet.isActive && activePrompt.prompActive)
+                {
+                    Piano.PlayOneShot(GS4);
+                }
+                break;
+            case "FreePlay":
+                if (context.performed)
+                {
+                    Piano.PlayOneShot(GS4);
+                }
+                break;
         }
     }
 
     public void onA4(InputAction.CallbackContext context)
     {
-        if (context.performed && !activeSheet.isActive && activePrompt.prompActive)
+        switch (activeScene)
         {
-            Piano.PlayOneShot(A4);
+            case "Quiz":
+                if (context.performed && !activeSheet.isActive && activePrompt.prompActive)
+                {
+                    Piano.PlayOneShot(A4);
+                }
+                break;
+            case "FreePlay":
+                if (context.performed)
+                {
+                    Piano.PlayOneShot(A4);
+                }
+                break;
         }
     }
 
     public void onAS4(InputAction.CallbackContext context)
     {
-        if (context.performed && !activeSheet.isActive && activePrompt.prompActive)
+        switch (activeScene)
         {
-            Piano.PlayOneShot(AS4);
+            case "Quiz":
+                if (context.performed && !activeSheet.isActive && activePrompt.prompActive)
+                {
+                    Piano.PlayOneShot(AS4);
+                }
+                break;
+            case "FreePlay":
+                if (context.performed)
+                {
+                    Piano.PlayOneShot(AS4);
+                }
+                break;
         }
     }
 
     public void onB4(InputAction.CallbackContext context)
     {
-        if (context.performed && !activeSheet.isActive && activePrompt.prompActive)
+        switch (activeScene)
         {
-            Piano.PlayOneShot(B4);
+            case "Quiz":
+                if (context.performed && !activeSheet.isActive && activePrompt.prompActive)
+                {
+                    Piano.PlayOneShot(B4);
+                }
+                break;
+            case "FreePlay":
+                if (context.performed)
+                {
+                    Piano.PlayOneShot(B4);
+                }
+                break;
         }
     }
 }
