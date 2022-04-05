@@ -6,13 +6,13 @@
 
 ## **First off, why and what?**
 
-### After a thorough look through out options in terms of an interesting special input/output. Mikey and Martijn have decided on a midi keyboard as input. It would cut on costs for new hardware, as Mikey already owns one for testing. We had some other options in mind before this however. 
+### After a thorough look through out options in terms of an interesting special input/output. We have decided on a midi keyboard as input. It would cut on costs for new hardware, as Mikey already owns one for testing. We had some other options in mind before this however. 
 
 * Using an eyetracker
 * Hand tracking
 * Donkey Kong Bongos
 
-### These options eventually fell through, wether it was because of cost, unoriginality or a lack of documentation on it's use. Mikey shared the idea with a couple of people in his friend circle, and in class. Eventually coming to the conclusion with Martijn to make something with the Midi Keyboard, with the actual product being a keyboard practice program. A good start to more representation for the input at hand. This process was completed within a week. Development started almost immediately after. 
+### These options eventually fell through, whether it was because of cost, unoriginality or a lack of documentation on it's use. Mikey shared the idea with a couple of people in his friend circle, and in class. Eventually coming to the conclusion with Martijn to make something with the Midi Keyboard, with the actual product being a keyboard practice program. A good start to more representation for the input at hand. This process was completed within a week. Development started almost immediately after. 
 ### With the subject of resources at hand, we needed software, which would include a programming language, and then resources to actually use the input. All of these have been met. 
 
 * Unity (Engine)
@@ -26,7 +26,7 @@
 
 ## **Getting a feel for the idea**
 
-### As previously mentioned, Mikey and Martijn will be making a keyboard practice program in Unity. This would require some designing so they eventually got a ground plan going. 
+### As previously mentioned, We will be making a keyboard practice program in Unity. This would require some designing so they eventually got a ground plan going. 
 
 * Backend
  * Quiz system
@@ -59,3 +59,8 @@
 
 ### This plan went smoothly, without any major hastle. Only thing that was consumed was time developing it. 
 ### Every deadline we set for a segment was hit without issue. And we are proud of the product we have made. You can find the product in a zip file under "Releases".
+
+
+## **User Testing**
+
+### Section pending, User Tests yet to be performed.
