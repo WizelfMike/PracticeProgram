@@ -109,10 +109,10 @@ https://youtu.be/GoOcC6vTzLc
 https://youtu.be/zwNYSm8OeZQ
 
 * Q&A
- * "What did you think of the gameplay?"                                       : "I thought it was nice. I thought the Quiz would be better if it was more expanded, but the freeplay mode is quite fun."
- * "How did it feel to play?"                                                  : "It felt great. Nothing I'd add or remove in terms of feel."
- * "What did you think of the visuals?"                                        : "I like the artstyle. It's smooth and fits the style of gameplay."
- * "As someone who doesn't do music, did you learn from this experience?"      : "I actually did get the hang of it. Which I believe means it's working."
- * "Do you have anything you would add or take away?"                          : "I would add more modes. A training mode, Endless mode, and maybe a campaign of some sorts."
+ * What did you think of the gameplay?                                       : "I thought it was nice. I thought the Quiz would be better if it was more expanded, but the freeplay mode is quite fun."
+ * How did it feel to play?                                                  : "It felt great. Nothing I'd add or remove in terms of feel."
+ * What did you think of the visuals?                                        : "I like the artstyle. It's smooth and fits the style of gameplay."
+ * As someone who doesn't do music, did you learn from this experience?      : "I actually did get the hang of it. Which I believe means it's working."
+ * Do you have anything you would add or take away?                          : "I would add more modes. A training mode, Endless mode, and maybe a campaign of some sorts."
 
               
