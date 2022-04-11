@@ -86,23 +86,29 @@
 
 ### Here are the videos with the interviews:
 
+### Janke Turksema
+
 https://youtu.be/XW4FdnoyUXA
 
 * Q&A
- * "What did you think of the gameplay?"                                       : 
- * "How did it feel to play?"                                                  :
- * "What did you think of the visuals?"                                        :
- * "As someone who doesn't do music, did you learn from this experience?"      :
- * "Do you have anything you would add or take away?"                          :    
+ * "What did you think of the gameplay?"                                       : "Ik vond het een leuk en leerzaam programma."
+ * "How did it feel to play?"                                                  : "Heel goed! Het lag aan mezelf dat ik niet begreep dat je hulp kon krijgen van het systeem.  Toen ik dat doorhad was het heel makkelijk."
+ * "What did you think of the visuals?"                                        : "Mooi en overzichtelijk. Het was heel duidelijk waar je naar toe moest."
+ * "As someone who doesn't do music, did you learn from this experience?"      : "Ja! De toonladder en een beetje hoe de toetsen op de piano hierbij passen"
+ * "Do you have anything you would add or take away?"                          : "Geen, zit goed in elkaar."
+
+
+### Michel van der Meer
 
 https://youtu.be/GoOcC6vTzLc
 
 * Q&A
- * "What did you think of the gameplay?"                                       : 
- * "How did it feel to play?"                                                  :
- * "What did you think of the visuals?"                                        :
- * "As someone who doesn't do music, did you learn from this experience?"      :
- * "Do you have anything you would add or take away?"                          :        
+ * What did you think of the gameplay?                                       : "De quiz leerde je goed waar alle toetsen zaten, de cheatsheet helpt ook als je er nog niets vanaf weet"
+ * How did it feel to play?                                                  : "Het voelde goed, simpel en duidelijk"
+ * What did you think of the visuals?                                        : "Visueel deed het wat het moest."
+ * As someone who doesn't do music, did you learn from this experience?      : "Ik heb er wel wat van geleerd. Nog nooit piano gespeeld maar heb er nu een goede basis voor."
+ * Do you have anything you would add or take away?                          : "Misschien moeilijkere quizzes voor als je door wilt leren"
+
 
 ### Sam Van Steijn.
 
